@@ -1,0 +1,47 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-08-03T08:00:59.770Z",
+        "line": 2,
+        "name": "Testing Menampilkan Halaman Login",
+        "description": "",
+        "id": "user-sales-login-ke-siloam-project;testing-menampilkan-halaman-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7426000000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User mengakses url",
+            "match": {
+              "location": "com.siloam.StepDefinitions.user_mengakses_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User menampillkan halaman login",
+            "match": {
+              "location": "com.siloam.StepDefinitions.user_menampillkan_halaman_login()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "User Sales Login ke Siloam Project",
+    "description": "",
+    "id": "user-sales-login-ke-siloam-project",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/AksesSite.feature",
+    "tags": []
+  }
+]

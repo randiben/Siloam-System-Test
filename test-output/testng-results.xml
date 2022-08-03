@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="8362" started-at="2022-08-03T15:00:59 ICT" finished-at="2022-08-03T15:01:07 ICT">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.siloam.RunnerFiles@2d8f65a4]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="8362" started-at="2022-08-03T15:00:59 ICT" finished-at="2022-08-03T15:01:07 ICT">
+      <class name="com.siloam.RunnerFiles">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.siloam.RunnerFiles@2d8f65a4]" name="setUpClass" is-config="true" duration-ms="508" started-at="2022-08-03T15:00:59 ICT" finished-at="2022-08-03T15:00:59 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.siloam.RunnerFiles@2d8f65a4]" name="runScenario" duration-ms="7609" started-at="2022-08-03T15:00:59 ICT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-03T15:01:07 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Testing Menampilkan Halaman Login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Sales Login ke Siloam Project"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.siloam.RunnerFiles@2d8f65a4]" name="tearDownClass" is-config="true" duration-ms="167" started-at="2022-08-03T15:01:07 ICT" finished-at="2022-08-03T15:01:07 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.siloam.RunnerFiles -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
