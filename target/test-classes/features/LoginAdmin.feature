@@ -1,4 +1,4 @@
-Feature: Login to Website
+Feature: Admin Login to Website
 
 	Scenario: Masuk dengan tidak memasukan username
 		Given User mengakses url
@@ -19,14 +19,14 @@ Feature: Login to Website
 		Given User mengakses url
 		When User berada di dalam halaman login
 		When User memasukan username "anggis15"
-		And User memasukan password "lalala"
+		And User memasukan password "d1k4@passw0rd"
 		And User menekan tombol Login
 		Then User mendapatkan kata informasi gagal login
 		
 	Scenario: Masuk dengan username benar dan password salah
 		Given User mengakses url
 		When User berada di dalam halaman login
-		When User memasukan username "anggis15"
+		When User memasukan username "admindika"
 		And User memasukan password "lalala"
 		And User menekan tombol Login
 		Then User mendapatkan kata informasi gagal login
@@ -34,7 +34,7 @@ Feature: Login to Website
 	Scenario: Masuk dengan valid account
 		Given User mengakses url
 		When User berada di dalam halaman login
-		When User memasukan username "D6200927"
-		And User memasukan password "19971023"
+		When User memasukan username "admindika"
+		And User memasukan password "d1k4@passw0rd"
 		And User menekan tombol Login
 		Then User berhasil login dan berada dalam halaman home
