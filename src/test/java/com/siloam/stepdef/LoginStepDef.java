@@ -14,12 +14,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
-import com.relevantcodes.extentreports.LogStatus;
+//import com.relevantcodes.extentreports.LogStatus;
 import com.siloam.plugin.DriverSet;
 import com.siloam.plugin.LoginStep;
 
 
-public class StepDefinitions {
+public class LoginStepDef {
 	
 
 	private static WebDriver driver;

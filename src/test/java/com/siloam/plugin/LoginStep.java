@@ -22,7 +22,7 @@ public class LoginStep {
 //	private WebElement btnLogin;
 	
 	public void loginSales() {
-		driver = DriverSet.setProperties();
+//		driver = DriverSet.setProperties();
 		driver.findElement(By.xpath("//input[@name=\"username\"]")).sendKeys("D6200927");
 		driver.findElement(By.xpath("//input[@name=\"password\"]")).sendKeys("19971023");
 		driver.findElement(By.xpath("//button[@type=\"submit\"]")).click();
