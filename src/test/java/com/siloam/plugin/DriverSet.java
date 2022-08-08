@@ -9,8 +9,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class DriverSet {
 	
-	static String url = "https://dev.ptdika.com/siloam/";
-//	private static WebDriver driver;
+	public static String url = "https://dev.ptdika.com/siloam/";
+	private static WebDriver driver;
+	
+	
+	
 
 	public static String getPath() {
 		String path = null;
@@ -24,11 +27,14 @@ public class DriverSet {
 		return path;
 	}
 	
-	public static WebDriver setProperties() {
+	public static void setDriver() {
 		System.setProperty("webdriver.chrome.driver", DriverSet.getPath());
-		WebDriver driver = new ChromeDriver();
-		driver.navigate().to(url);
+		driver = new ChromeDriver();
 		driver.manage().window().maximize();
+//		return driver;
+	}
+	
+	public static WebDriver getDriver() {
 		return driver;
 	}
 	

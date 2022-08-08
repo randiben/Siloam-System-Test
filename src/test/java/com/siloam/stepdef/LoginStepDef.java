@@ -1,5 +1,6 @@
-package com.siloam;
+package com.siloam.stepdef;
 
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -13,18 +14,25 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
-import com.relevantcodes.extentreports.LogStatus;
+//import com.relevantcodes.extentreports.LogStatus;
 import com.siloam.plugin.DriverSet;
+import com.siloam.plugin.LoginStep;
 
 
-public class StepDefinitions {
+public class LoginStepDef {
 	
 
 	private static WebDriver driver;
+	private LoginStep loginPage;
+	
+	
 	
 	@Given("User mengakses url")
 	public void user_mengakses_url() {
-	   driver = DriverSet.setProperties();
+		DriverSet.setDriver();
+		driver.navigate().to(DriverSet.url);
+		driver.manage().window().maximize();
+		loginPage.loginSales();
 	}
 
 	@Given("User berada di dalam halaman login")
