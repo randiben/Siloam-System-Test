@@ -1,4 +1,4 @@
-package com.siloam;
+package com.siloam.stepdef;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -13,11 +13,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
-import com.relevantcodes.extentreports.LogStatus;
+//import com.relevantcodes.extentreports.LogStatus;
 import com.siloam.plugin.DriverSet;
 
 
-public class StepDefinitions {
+public class LoginStepDef {
 	
 
 	private static WebDriver driver;
