@@ -9,7 +9,7 @@ import com.siloam.plugin.DriverSet;
 
 public class LoginStep {
 	
-	private WebDriver driver;
+	private static WebDriver driver;
 	
 	
 //	@FindBy (xpath = "//input[@name=\"username\"]")
@@ -22,6 +22,7 @@ public class LoginStep {
 //	private WebElement btnLogin;
 	
 	public void loginSales() {
+		driver = DriverSet.setProperties();
 		driver.findElement(By.xpath("//input[@name=\"username\"]")).sendKeys("D6200927");
 		driver.findElement(By.xpath("//input[@name=\"password\"]")).sendKeys("19971023");
 		driver.findElement(By.xpath("//button[@type=\"submit\"]")).click();

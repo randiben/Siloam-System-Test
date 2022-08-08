@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-08-03T08:00:59.770Z",
+        "start_timestamp": "2022-08-07T17:34:42.651Z",
         "line": 2,
         "name": "Testing Menampilkan Halaman Login",
         "description": "",
@@ -13,8 +13,9 @@
         "steps": [
           {
             "result": {
-              "duration": 7426000000,
-              "status": "passed"
+              "error_message": "java.lang.NullPointerException\r\n\tat com.siloam.StepDefinitions.user_mengakses_url(StepDefinitions.java:26)\r\n\tat ✽.User mengakses url(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/AksesSite.feature:3)\r\n",
+              "duration": 4372000000,
+              "status": "failed"
             },
             "line": 3,
             "name": "User mengakses url",
@@ -25,7 +26,7 @@
           },
           {
             "result": {
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 4,
             "name": "User menampillkan halaman login",
@@ -42,6 +43,1022 @@
     "id": "user-sales-login-ke-siloam-project",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/AksesSite.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-08-07T17:34:47.093Z",
+        "line": 3,
+        "name": "Klik button Collapse / Expand",
+        "description": "",
+        "id": "upload-dokumen-testing;klik-button-collapse-/-expand",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "User klik button collapse / Expand",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "Layout menu dihilangkan / diperlebar",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-07T17:34:47.107Z",
+        "line": 7,
+        "name": "Edit data",
+        "description": "",
+        "id": "upload-dokumen-testing;edit-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "User klik tombol edit data",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "Form menu input menjadi aktif",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-07T17:34:47.119Z",
+        "line": 11,
+        "name": "Form input nama",
+        "description": "",
+        "id": "upload-dokumen-testing;form-input-nama",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "User ubah nama",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "Nama berubah sesuai inputan",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-07T17:34:47.130Z",
+        "line": 15,
+        "name": "Form input nomor bpjs",
+        "description": "",
+        "id": "upload-dokumen-testing;form-input-nomor-bpjs",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "User ubah nomor bpjs",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "Nomor bpjs berubah sesuai inputan",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-07T17:34:47.138Z",
+        "line": 19,
+        "name": "Form input nomor ktp",
+        "description": "",
+        "id": "upload-dokumen-testing;form-input-nomor-ktp",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "User ubah nomor ktp",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "Nomor ktp berubah sesuai inputan",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-07T17:34:47.148Z",
+        "line": 23,
+        "name": "Form input alamat",
+        "description": "",
+        "id": "upload-dokumen-testing;form-input-alamat",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "User ubah alamat",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "Alamat berubah sesuai inputan",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-07T17:34:47.155Z",
+        "line": 27,
+        "name": "Form input kota ktp",
+        "description": "",
+        "id": "upload-dokumen-testing;form-input-kota-ktp",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 28,
+            "name": "User ubah kota ktp",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 29,
+            "name": "kota ktp berubah sesuai pilihan",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-07T17:34:47.166Z",
+        "line": 31,
+        "name": "Form input faskes awal",
+        "description": "",
+        "id": "upload-dokumen-testing;form-input-faskes-awal",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 32,
+            "name": "User ubah faskes awal",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 33,
+            "name": "faskes awal berubah sesuai pilihan",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-07T17:34:47.172Z",
+        "line": 35,
+        "name": "Form input faskes tujuan",
+        "description": "",
+        "id": "upload-dokumen-testing;form-input-faskes-tujuan",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 36,
+            "name": "User ubah faskes tujuan",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 37,
+            "name": "faskes tujuan berubah sesuai pilihan",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-07T17:34:47.181Z",
+        "line": 39,
+        "name": "Form input alasan",
+        "description": "",
+        "id": "upload-dokumen-testing;form-input-alasan",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 40,
+            "name": "User ubah alasan",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 41,
+            "name": "alasan berubah sesuai pilihan",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-07T17:34:47.187Z",
+        "line": 43,
+        "name": "Button cancel edit",
+        "description": "",
+        "id": "upload-dokumen-testing;button-cancel-edit",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 44,
+            "name": "User klik cancel button saat edit",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 45,
+            "name": "Menu input data nonaktif",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 46,
+            "name": "Data tidak berubah",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-07T17:34:47.198Z",
+        "line": 48,
+        "name": "Delete file dokumen",
+        "description": "",
+        "id": "upload-dokumen-testing;delete-file-dokumen",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 49,
+            "name": "User hapus file",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 50,
+            "name": "tampil alert konfirmasi lalu file terhapus",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 51,
+            "name": "Button submit nonaktif",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-07T17:34:47.205Z",
+        "line": 53,
+        "name": "Preview dokumen perjanjian",
+        "description": "",
+        "id": "upload-dokumen-testing;preview-dokumen-perjanjian",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 54,
+            "name": "User check preview perjanjian",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 55,
+            "name": "Data sama dengan inputan",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-07T17:34:47.215Z",
+        "line": 57,
+        "name": "Button submit",
+        "description": "",
+        "id": "upload-dokumen-testing;button-submit",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 58,
+            "name": "User klik button submit",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 59,
+            "name": "klik ok alert verifikasi",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 60,
+            "name": "Menampilkan halaman input data dan notifikasi ttd digital berhasil",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Upload Dokumen Testing",
+    "description": "",
+    "id": "upload-dokumen-testing",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/TTD.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-08-07T17:34:47.223Z",
+        "line": 3,
+        "name": "Akses menu upload document",
+        "description": "",
+        "id": "upload-dokumen-testing;akses-menu-upload-document",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "User sales akses menu upload",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "Menampilkan halaman upload document",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-07T17:34:47.233Z",
+        "line": 8,
+        "name": "Klik cancel button saat menambahkan foto faskes awal",
+        "description": "",
+        "id": "upload-dokumen-testing;klik-cancel-button-saat-menambahkan-foto-faskes-awal",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "User tambah foto",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "klik tombol cancel",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "halaman kembali ke menu upload tanpa foto terupload",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-07T17:34:47.241Z",
+        "line": 13,
+        "name": "Upload foto faskes awal file size diatas 5mb",
+        "description": "",
+        "id": "upload-dokumen-testing;upload-foto-faskes-awal-file-size-diatas-5mb",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "User tambah foto faskes awal",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "Upload tidak diproses",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "Muncul notifikasi upload error",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-07T17:34:47.252Z",
+        "line": 18,
+        "name": "Upload foto faskes awal dengan file selain format image",
+        "description": "",
+        "id": "upload-dokumen-testing;upload-foto-faskes-awal-dengan-file-selain-format-image",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19,
+            "name": "User tambah foto faskes awal",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "Upload tidak diproses",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "Muncul notifikasi upload error",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-07T17:34:47.258Z",
+        "line": 23,
+        "name": "Upload foto faskes awal dengan benar",
+        "description": "",
+        "id": "upload-dokumen-testing;upload-foto-faskes-awal-dengan-benar",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "User tambah foto faskes awal",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "Muncul pop up data berhasil diupload",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 26,
+            "name": "Kembali ke menu sebelumnya menampilkan foto yang terupload",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-07T17:34:47.269Z",
+        "line": 29,
+        "name": "Klik cancel button saat menambahkan foto faskes tujuan",
+        "description": "",
+        "id": "upload-dokumen-testing;klik-cancel-button-saat-menambahkan-foto-faskes-tujuan",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30,
+            "name": "User tambah foto",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 31,
+            "name": "klik tombol cancel",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 32,
+            "name": "halaman kembali ke menu upload tanpa foto terupload",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-07T17:34:47.275Z",
+        "line": 34,
+        "name": "Upload foto faskes tujuan file size diatas 5mb",
+        "description": "",
+        "id": "upload-dokumen-testing;upload-foto-faskes-tujuan-file-size-diatas-5mb",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 35,
+            "name": "User tambah foto faskes tujuan",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 36,
+            "name": "Upload tidak diproses",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 37,
+            "name": "Muncul notifikasi upload error",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-07T17:34:47.282Z",
+        "line": 39,
+        "name": "Upload foto faskes tujuan dengan file selain format image",
+        "description": "",
+        "id": "upload-dokumen-testing;upload-foto-faskes-tujuan-dengan-file-selain-format-image",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 40,
+            "name": "User tambah foto faskes tujuan",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 41,
+            "name": "Upload tidak diproses",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 42,
+            "name": "Muncul notifikasi upload error",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-07T17:34:47.287Z",
+        "line": 44,
+        "name": "Upload foto faskes tujuan dengan benar",
+        "description": "",
+        "id": "upload-dokumen-testing;upload-foto-faskes-tujuan-dengan-benar",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 45,
+            "name": "User tambah foto faskes tujuan",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 46,
+            "name": "Muncul pop up data berhasil diupload",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 47,
+            "name": "Kembali ke menu sebelumnya menampilkan foto yang terupload",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-07T17:34:47.291Z",
+        "line": 50,
+        "name": "Klik cancel button saat menambahkan foto ttd",
+        "description": "",
+        "id": "upload-dokumen-testing;klik-cancel-button-saat-menambahkan-foto-ttd",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 51,
+            "name": "User tambah foto",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 52,
+            "name": "klik tombol cancel",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 53,
+            "name": "halaman kembali ke menu upload tanpa foto terupload",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-07T17:34:47.303Z",
+        "line": 55,
+        "name": "Upload foto ttd file size diatas 5mb",
+        "description": "",
+        "id": "upload-dokumen-testing;upload-foto-ttd-file-size-diatas-5mb",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 56,
+            "name": "User tambah foto ttd",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 57,
+            "name": "Upload tidak diproses",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 58,
+            "name": "Muncul notifikasi upload error",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-07T17:34:47.310Z",
+        "line": 60,
+        "name": "Upload foto ttd dengan file selain format image",
+        "description": "",
+        "id": "upload-dokumen-testing;upload-foto-ttd-dengan-file-selain-format-image",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 61,
+            "name": "User tambah foto ttd",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 62,
+            "name": "Upload tidak diproses",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 63,
+            "name": "Muncul notifikasi upload error",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-07T17:34:47.319Z",
+        "line": 65,
+        "name": "Upload foto ttd dengan benar",
+        "description": "",
+        "id": "upload-dokumen-testing;upload-foto-ttd-dengan-benar",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 66,
+            "name": "User tambah foto ttd",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 67,
+            "name": "Muncul pop up data berhasil diupload",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 68,
+            "name": "Kembali ke menu sebelumnya menampilkan foto yang terupload",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-07T17:34:47.323Z",
+        "line": 71,
+        "name": "Menambahkan lengkap foto yang diminta sistem",
+        "description": "",
+        "id": "upload-dokumen-testing;menambahkan-lengkap-foto-yang-diminta-sistem",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 72,
+            "name": "User upload tiga foto yang diminta sistem",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 73,
+            "name": "Tampil notifikasi Terima kasih dokumen anda sudah lengkap!",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 74,
+            "name": "Tombol selanjutnya menuju menu TTD aktif",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-07T17:34:47.330Z",
+        "line": 76,
+        "name": "Klik button selanjutnya menu upload dokumen",
+        "description": "",
+        "id": "upload-dokumen-testing;klik-button-selanjutnya-menu-upload-dokumen",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 77,
+            "name": "User klik button selanjutnya",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 78,
+            "name": "Menampilkan alert verifikasi lanjut ke tahap selanjutnya",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 79,
+            "name": "Menampilkan halaman menu ttd dengan review data",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Upload Dokumen Testing",
+    "description": "",
+    "id": "upload-dokumen-testing",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/UploadDocument.feature",
     "tags": []
   }
 ]
