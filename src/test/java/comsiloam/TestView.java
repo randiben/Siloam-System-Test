@@ -18,7 +18,7 @@ public class TestView {
 
 	@Given("user berada di halaman login")
 	public void user_berada_di_halaman_login() {
-		System.setProperty("webdriver.chrome.driver", "/home/ancient/Downloads/chromedriver_linux64/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "C:\\webdrivers\\chromedriver.exe");
 		this.driver = new ChromeDriver();
 		driver.navigate().to(this.baseURL);
 	}
