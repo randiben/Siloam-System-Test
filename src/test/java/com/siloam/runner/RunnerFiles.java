@@ -11,6 +11,6 @@ import io.cucumber.testng.CucumberOptions;
 							})
 
 public class RunnerFiles extends AbstractTestNGCucumberTests {
-	
+	test
 	
 }
