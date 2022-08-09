@@ -1,6 +1,7 @@
 Feature: Upload Dokumen Testing
 
 	Scenario: Akses menu upload document
+		Given User sales akses url
 		When User sales akses menu upload
 		Then Menampilkan halaman upload document
 	

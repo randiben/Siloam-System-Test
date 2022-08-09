@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/29</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/14</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Aug 08 00:34:41 ICT 2022</td>
+<td>Started on:</td><td>Tue Aug 09 18:25:09 ICT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>5 seconds (5784 ms)</td>
+<tr><td>Total time:</td><td>26 seconds (26008 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,17 +75,63 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.siloam.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Testing Menampilkan Halaman Login", "User Sales Login ke Siloam Project"</td>
-<td><div><pre>java.lang.NullPointerException
-	at com.siloam.StepDefinitions.user_mengakses_url(StepDefinitions.java:26)
-	at ?.User mengakses url(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/AksesSite.feature:3)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1060519157", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1060519157'><pre>java.lang.NullPointerException
-	at com.siloam.StepDefinitions.user_mengakses_url(StepDefinitions.java:26)
-	at ?.User mengakses url(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/AksesSite.feature:3)
+<td title='com.siloam.runner.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.runner.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Akses menu upload document", "Upload Dokumen Testing"</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=104.0.5112.79)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;LAPTOP-BUM46IKV&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_333&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.79, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Ben\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:61596}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d587abf8ee83155dbaa08ae0a8f8d0d4
+*** Element info: {Using=xpath, value=//input[@name=&quot;username&quot;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.siloam.plugin.LoginStep.loginSales(LoginStep.java:27)
+	at com.siloam.uploaddoc.UploadDocumentStepDef.user_sales_akses_url(UploadDocumentStepDef.java:24)
+	at ?.User sales akses url(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1917082298", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1917082298'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=104.0.5112.79)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;LAPTOP-BUM46IKV&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_333&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.79, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Ben\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:61596}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d587abf8ee83155dbaa08ae0a8f8d0d4
+*** Element info: {Using=xpath, value=//input[@name=&quot;username&quot;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.siloam.plugin.LoginStep.loginSales(LoginStep.java:27)
+	at com.siloam.uploaddoc.UploadDocumentStepDef.user_sales_akses_url(UploadDocumentStepDef.java:24)
+	at ?.User sales akses url(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:4)
 </pre></div></td>
-<td>4</td>
-<td>com.siloam.RunnerFiles@2d8f65a4</td></tr>
+<td>25</td>
+<td>com.siloam.runner.RunnerFiles@2d8f65a4</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -95,25 +141,9 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.siloam.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Klik button Collapse / Expand", "Upload Dokumen Testing"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: There were 2 undefined steps
-The step &quot;User klik button collapse / Expand&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User klik button collapse \\/ Expand&quot;)
-public void user_klik_button_collapse_Expand() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Layout menu dihilangkan / diperlebar&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Layout menu dihilangkan \\/ diperlebar&quot;)
-public void layout_menu_dihilangkan_diperlebar() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
+<td title='com.siloam.runner.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.runner.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Klik cancel button saat menambahkan foto faskes awal", "Upload Dokumen Testing"</td>
+<td><div><pre>org.testng.SkipException: TODO: implement me
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:116)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -144,25 +174,12 @@ public void layout_menu_dihilangkan_diperlebar() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace865858182", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace865858182'><pre>io.cucumber.testng.UndefinedStepException: There were 2 undefined steps
-The step &quot;User klik button collapse / Expand&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User klik button collapse \\/ Expand&quot;)
-public void user_klik_button_collapse_Expand() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Layout menu dihilangkan / diperlebar&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Layout menu dihilangkan \\/ diperlebar&quot;)
-public void layout_menu_dihilangkan_diperlebar() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+	at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto(UploadDocumentStepDef.java:44)
+	at ?.User tambah foto(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:10)
+</pre></div><a href='#' onClick='toggleBox("stack-trace365056339", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace365056339'><pre>org.testng.SkipException: TODO: implement me
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:116)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -193,29 +210,16 @@ public void layout_menu_dihilangkan_diperlebar() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+	at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto(UploadDocumentStepDef.java:44)
+	at ?.User tambah foto(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:10)
 </pre></div></td>
 <td>0</td>
-<td>com.siloam.RunnerFiles@2d8f65a4</td></tr>
+<td>com.siloam.runner.RunnerFiles@2d8f65a4</td></tr>
 <tr>
-<td title='com.siloam.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit data", "Upload Dokumen Testing"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: There were 2 undefined steps
-The step &quot;User klik tombol edit data&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User klik tombol edit data&quot;)
-public void user_klik_tombol_edit_data() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Form menu input menjadi aktif&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Form menu input menjadi aktif&quot;)
-public void form_menu_input_menjadi_aktif() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
+<td title='com.siloam.runner.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.runner.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Upload foto faskes awal file size diatas 5mb", "Upload Dokumen Testing"</td>
+<td><div><pre>org.testng.SkipException: TODO: implement me
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:116)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -246,25 +250,12 @@ public void form_menu_input_menjadi_aktif() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace951988316", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace951988316'><pre>io.cucumber.testng.UndefinedStepException: There were 2 undefined steps
-The step &quot;User klik tombol edit data&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User klik tombol edit data&quot;)
-public void user_klik_tombol_edit_data() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Form menu input menjadi aktif&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Form menu input menjadi aktif&quot;)
-public void form_menu_input_menjadi_aktif() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+	at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_faskes_awal(UploadDocumentStepDef.java:62)
+	at ?.User tambah foto faskes awal(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:15)
+</pre></div><a href='#' onClick='toggleBox("stack-trace166536076", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace166536076'><pre>org.testng.SkipException: TODO: implement me
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:116)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -295,29 +286,16 @@ public void form_menu_input_menjadi_aktif() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+	at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_faskes_awal(UploadDocumentStepDef.java:62)
+	at ?.User tambah foto faskes awal(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:15)
 </pre></div></td>
 <td>0</td>
-<td>com.siloam.RunnerFiles@2d8f65a4</td></tr>
+<td>com.siloam.runner.RunnerFiles@2d8f65a4</td></tr>
 <tr>
-<td title='com.siloam.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Form input nama", "Upload Dokumen Testing"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: There were 2 undefined steps
-The step &quot;User ubah nama&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User ubah nama&quot;)
-public void user_ubah_nama() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Nama berubah sesuai inputan&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Nama berubah sesuai inputan&quot;)
-public void nama_berubah_sesuai_inputan() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
+<td title='com.siloam.runner.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.runner.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Upload foto faskes awal dengan file selain format image", "Upload Dokumen Testing"</td>
+<td><div><pre>org.testng.SkipException: TODO: implement me
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:116)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -348,25 +326,12 @@ public void nama_berubah_sesuai_inputan() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace647973805", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace647973805'><pre>io.cucumber.testng.UndefinedStepException: There were 2 undefined steps
-The step &quot;User ubah nama&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User ubah nama&quot;)
-public void user_ubah_nama() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Nama berubah sesuai inputan&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Nama berubah sesuai inputan&quot;)
-public void nama_berubah_sesuai_inputan() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+	at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_faskes_awal(UploadDocumentStepDef.java:62)
+	at ?.User tambah foto faskes awal(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:20)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1374217958", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1374217958'><pre>org.testng.SkipException: TODO: implement me
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:116)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -397,29 +362,16 @@ public void nama_berubah_sesuai_inputan() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+	at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_faskes_awal(UploadDocumentStepDef.java:62)
+	at ?.User tambah foto faskes awal(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:20)
 </pre></div></td>
 <td>0</td>
-<td>com.siloam.RunnerFiles@2d8f65a4</td></tr>
+<td>com.siloam.runner.RunnerFiles@2d8f65a4</td></tr>
 <tr>
-<td title='com.siloam.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Form input nomor bpjs", "Upload Dokumen Testing"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: There were 2 undefined steps
-The step &quot;User ubah nomor bpjs&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User ubah nomor bpjs&quot;)
-public void user_ubah_nomor_bpjs() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Nomor bpjs berubah sesuai inputan&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Nomor bpjs berubah sesuai inputan&quot;)
-public void nomor_bpjs_berubah_sesuai_inputan() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
+<td title='com.siloam.runner.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.runner.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Upload foto faskes awal dengan benar", "Upload Dokumen Testing"</td>
+<td><div><pre>org.testng.SkipException: TODO: implement me
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:116)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -450,25 +402,12 @@ public void nomor_bpjs_berubah_sesuai_inputan() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1591161296", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1591161296'><pre>io.cucumber.testng.UndefinedStepException: There were 2 undefined steps
-The step &quot;User ubah nomor bpjs&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User ubah nomor bpjs&quot;)
-public void user_ubah_nomor_bpjs() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Nomor bpjs berubah sesuai inputan&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Nomor bpjs berubah sesuai inputan&quot;)
-public void nomor_bpjs_berubah_sesuai_inputan() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+	at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_faskes_awal(UploadDocumentStepDef.java:62)
+	at ?.User tambah foto faskes awal(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:25)
+</pre></div><a href='#' onClick='toggleBox("stack-trace912747546", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace912747546'><pre>org.testng.SkipException: TODO: implement me
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:116)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -499,29 +438,16 @@ public void nomor_bpjs_berubah_sesuai_inputan() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+	at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_faskes_awal(UploadDocumentStepDef.java:62)
+	at ?.User tambah foto faskes awal(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:25)
 </pre></div></td>
 <td>0</td>
-<td>com.siloam.RunnerFiles@2d8f65a4</td></tr>
+<td>com.siloam.runner.RunnerFiles@2d8f65a4</td></tr>
 <tr>
-<td title='com.siloam.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Form input nomor ktp", "Upload Dokumen Testing"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: There were 2 undefined steps
-The step &quot;User ubah nomor ktp&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User ubah nomor ktp&quot;)
-public void user_ubah_nomor_ktp() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Nomor ktp berubah sesuai inputan&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Nomor ktp berubah sesuai inputan&quot;)
-public void nomor_ktp_berubah_sesuai_inputan() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
+<td title='com.siloam.runner.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.runner.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Klik cancel button saat menambahkan foto faskes tujuan", "Upload Dokumen Testing"</td>
+<td><div><pre>org.testng.SkipException: TODO: implement me
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:116)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -552,25 +478,12 @@ public void nomor_ktp_berubah_sesuai_inputan() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace842331982", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace842331982'><pre>io.cucumber.testng.UndefinedStepException: There were 2 undefined steps
-The step &quot;User ubah nomor ktp&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User ubah nomor ktp&quot;)
-public void user_ubah_nomor_ktp() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Nomor ktp berubah sesuai inputan&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Nomor ktp berubah sesuai inputan&quot;)
-public void nomor_ktp_berubah_sesuai_inputan() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+	at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto(UploadDocumentStepDef.java:44)
+	at ?.User tambah foto(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1292472219", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1292472219'><pre>org.testng.SkipException: TODO: implement me
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:116)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -601,29 +514,16 @@ public void nomor_ktp_berubah_sesuai_inputan() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+	at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto(UploadDocumentStepDef.java:44)
+	at ?.User tambah foto(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:31)
 </pre></div></td>
 <td>0</td>
-<td>com.siloam.RunnerFiles@2d8f65a4</td></tr>
+<td>com.siloam.runner.RunnerFiles@2d8f65a4</td></tr>
 <tr>
-<td title='com.siloam.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Form input alamat", "Upload Dokumen Testing"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: There were 2 undefined steps
-The step &quot;User ubah alamat&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User ubah alamat&quot;)
-public void user_ubah_alamat() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Alamat berubah sesuai inputan&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Alamat berubah sesuai inputan&quot;)
-public void alamat_berubah_sesuai_inputan() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
+<td title='com.siloam.runner.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.runner.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Upload foto faskes tujuan file size diatas 5mb", "Upload Dokumen Testing"</td>
+<td><div><pre>org.testng.SkipException: TODO: implement me
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:116)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -654,25 +554,12 @@ public void alamat_berubah_sesuai_inputan() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2076249476", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2076249476'><pre>io.cucumber.testng.UndefinedStepException: There were 2 undefined steps
-The step &quot;User ubah alamat&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User ubah alamat&quot;)
-public void user_ubah_alamat() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Alamat berubah sesuai inputan&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Alamat berubah sesuai inputan&quot;)
-public void alamat_berubah_sesuai_inputan() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+	at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_faskes_tujuan(UploadDocumentStepDef.java:92)
+	at ?.User tambah foto faskes tujuan(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:36)
+</pre></div><a href='#' onClick='toggleBox("stack-trace548795052", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace548795052'><pre>org.testng.SkipException: TODO: implement me
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:116)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -703,29 +590,16 @@ public void alamat_berubah_sesuai_inputan() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+	at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_faskes_tujuan(UploadDocumentStepDef.java:92)
+	at ?.User tambah foto faskes tujuan(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:36)
 </pre></div></td>
 <td>0</td>
-<td>com.siloam.RunnerFiles@2d8f65a4</td></tr>
+<td>com.siloam.runner.RunnerFiles@2d8f65a4</td></tr>
 <tr>
-<td title='com.siloam.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Form input kota ktp", "Upload Dokumen Testing"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: There were 2 undefined steps
-The step &quot;User ubah kota ktp&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User ubah kota ktp&quot;)
-public void user_ubah_kota_ktp() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;kota ktp berubah sesuai pilihan&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;kota ktp berubah sesuai pilihan&quot;)
-public void kota_ktp_berubah_sesuai_pilihan() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
+<td title='com.siloam.runner.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.runner.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Upload foto faskes tujuan dengan file selain format image", "Upload Dokumen Testing"</td>
+<td><div><pre>org.testng.SkipException: TODO: implement me
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:116)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -756,25 +630,12 @@ public void kota_ktp_berubah_sesuai_pilihan() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace660595570", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace660595570'><pre>io.cucumber.testng.UndefinedStepException: There were 2 undefined steps
-The step &quot;User ubah kota ktp&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User ubah kota ktp&quot;)
-public void user_ubah_kota_ktp() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;kota ktp berubah sesuai pilihan&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;kota ktp berubah sesuai pilihan&quot;)
-public void kota_ktp_berubah_sesuai_pilihan() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+	at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_faskes_tujuan(UploadDocumentStepDef.java:92)
+	at ?.User tambah foto faskes tujuan(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:41)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2117099736", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2117099736'><pre>org.testng.SkipException: TODO: implement me
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:116)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -805,29 +666,16 @@ public void kota_ktp_berubah_sesuai_pilihan() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+	at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_faskes_tujuan(UploadDocumentStepDef.java:92)
+	at ?.User tambah foto faskes tujuan(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:41)
 </pre></div></td>
 <td>0</td>
-<td>com.siloam.RunnerFiles@2d8f65a4</td></tr>
+<td>com.siloam.runner.RunnerFiles@2d8f65a4</td></tr>
 <tr>
-<td title='com.siloam.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Form input faskes awal", "Upload Dokumen Testing"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: There were 2 undefined steps
-The step &quot;User ubah faskes awal&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User ubah faskes awal&quot;)
-public void user_ubah_faskes_awal() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;faskes awal berubah sesuai pilihan&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;faskes awal berubah sesuai pilihan&quot;)
-public void faskes_awal_berubah_sesuai_pilihan() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
+<td title='com.siloam.runner.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.runner.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Upload foto faskes tujuan dengan benar", "Upload Dokumen Testing"</td>
+<td><div><pre>org.testng.SkipException: TODO: implement me
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:116)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -858,25 +706,12 @@ public void faskes_awal_berubah_sesuai_pilihan() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1088491512", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1088491512'><pre>io.cucumber.testng.UndefinedStepException: There were 2 undefined steps
-The step &quot;User ubah faskes awal&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User ubah faskes awal&quot;)
-public void user_ubah_faskes_awal() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;faskes awal berubah sesuai pilihan&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;faskes awal berubah sesuai pilihan&quot;)
-public void faskes_awal_berubah_sesuai_pilihan() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+	at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_faskes_tujuan(UploadDocumentStepDef.java:92)
+	at ?.User tambah foto faskes tujuan(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:46)
+</pre></div><a href='#' onClick='toggleBox("stack-trace647149086", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace647149086'><pre>org.testng.SkipException: TODO: implement me
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:116)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -907,29 +742,16 @@ public void faskes_awal_berubah_sesuai_pilihan() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+	at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_faskes_tujuan(UploadDocumentStepDef.java:92)
+	at ?.User tambah foto faskes tujuan(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:46)
 </pre></div></td>
 <td>0</td>
-<td>com.siloam.RunnerFiles@2d8f65a4</td></tr>
+<td>com.siloam.runner.RunnerFiles@2d8f65a4</td></tr>
 <tr>
-<td title='com.siloam.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Form input faskes tujuan", "Upload Dokumen Testing"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: There were 2 undefined steps
-The step &quot;User ubah faskes tujuan&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User ubah faskes tujuan&quot;)
-public void user_ubah_faskes_tujuan() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;faskes tujuan berubah sesuai pilihan&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;faskes tujuan berubah sesuai pilihan&quot;)
-public void faskes_tujuan_berubah_sesuai_pilihan() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
+<td title='com.siloam.runner.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.runner.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Klik cancel button saat menambahkan foto ttd", "Upload Dokumen Testing"</td>
+<td><div><pre>org.testng.SkipException: TODO: implement me
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:116)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -960,25 +782,12 @@ public void faskes_tujuan_berubah_sesuai_pilihan() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1434066477", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1434066477'><pre>io.cucumber.testng.UndefinedStepException: There were 2 undefined steps
-The step &quot;User ubah faskes tujuan&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User ubah faskes tujuan&quot;)
-public void user_ubah_faskes_tujuan() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;faskes tujuan berubah sesuai pilihan&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;faskes tujuan berubah sesuai pilihan&quot;)
-public void faskes_tujuan_berubah_sesuai_pilihan() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+	at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto(UploadDocumentStepDef.java:44)
+	at ?.User tambah foto(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:52)
+</pre></div><a href='#' onClick='toggleBox("stack-trace103787801", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace103787801'><pre>org.testng.SkipException: TODO: implement me
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:116)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1009,29 +818,16 @@ public void faskes_tujuan_berubah_sesuai_pilihan() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+	at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto(UploadDocumentStepDef.java:44)
+	at ?.User tambah foto(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:52)
 </pre></div></td>
 <td>0</td>
-<td>com.siloam.RunnerFiles@2d8f65a4</td></tr>
+<td>com.siloam.runner.RunnerFiles@2d8f65a4</td></tr>
 <tr>
-<td title='com.siloam.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Form input alasan", "Upload Dokumen Testing"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: There were 2 undefined steps
-The step &quot;User ubah alasan&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User ubah alasan&quot;)
-public void user_ubah_alasan() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;alasan berubah sesuai pilihan&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;alasan berubah sesuai pilihan&quot;)
-public void alasan_berubah_sesuai_pilihan() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
+<td title='com.siloam.runner.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.runner.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Upload foto ttd file size diatas 5mb", "Upload Dokumen Testing"</td>
+<td><div><pre>org.testng.SkipException: TODO: implement me
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:116)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1062,25 +858,12 @@ public void alasan_berubah_sesuai_pilihan() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace648315947", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace648315947'><pre>io.cucumber.testng.UndefinedStepException: There were 2 undefined steps
-The step &quot;User ubah alasan&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User ubah alasan&quot;)
-public void user_ubah_alasan() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;alasan berubah sesuai pilihan&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;alasan berubah sesuai pilihan&quot;)
-public void alasan_berubah_sesuai_pilihan() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+	at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_ttd(UploadDocumentStepDef.java:98)
+	at ?.User tambah foto ttd(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:57)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1959451969", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1959451969'><pre>org.testng.SkipException: TODO: implement me
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:116)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1111,37 +894,16 @@ public void alasan_berubah_sesuai_pilihan() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+	at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_ttd(UploadDocumentStepDef.java:98)
+	at ?.User tambah foto ttd(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:57)
 </pre></div></td>
 <td>0</td>
-<td>com.siloam.RunnerFiles@2d8f65a4</td></tr>
+<td>com.siloam.runner.RunnerFiles@2d8f65a4</td></tr>
 <tr>
-<td title='com.siloam.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Button cancel edit", "Upload Dokumen Testing"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: There were 3 undefined steps
-The step &quot;User klik cancel button saat edit&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User klik cancel button saat edit&quot;)
-public void user_klik_cancel_button_saat_edit() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Menu input data nonaktif&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Menu input data nonaktif&quot;)
-public void menu_input_data_nonaktif() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Data tidak berubah&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Data tidak berubah&quot;)
-public void data_tidak_berubah() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
+<td title='com.siloam.runner.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.runner.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Upload foto ttd dengan file selain format image", "Upload Dokumen Testing"</td>
+<td><div><pre>org.testng.SkipException: TODO: implement me
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:116)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1172,33 +934,12 @@ public void data_tidak_berubah() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2117642238", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2117642238'><pre>io.cucumber.testng.UndefinedStepException: There were 3 undefined steps
-The step &quot;User klik cancel button saat edit&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User klik cancel button saat edit&quot;)
-public void user_klik_cancel_button_saat_edit() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Menu input data nonaktif&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Menu input data nonaktif&quot;)
-public void menu_input_data_nonaktif() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Data tidak berubah&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Data tidak berubah&quot;)
-public void data_tidak_berubah() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+	at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_ttd(UploadDocumentStepDef.java:98)
+	at ?.User tambah foto ttd(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:62)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1441328175", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1441328175'><pre>org.testng.SkipException: TODO: implement me
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:116)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1229,37 +970,16 @@ public void data_tidak_berubah() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+	at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_ttd(UploadDocumentStepDef.java:98)
+	at ?.User tambah foto ttd(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:62)
 </pre></div></td>
 <td>0</td>
-<td>com.siloam.RunnerFiles@2d8f65a4</td></tr>
+<td>com.siloam.runner.RunnerFiles@2d8f65a4</td></tr>
 <tr>
-<td title='com.siloam.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Delete file dokumen", "Upload Dokumen Testing"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: There were 3 undefined steps
-The step &quot;User hapus file&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User hapus file&quot;)
-public void user_hapus_file() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;tampil alert konfirmasi lalu file terhapus&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;tampil alert konfirmasi lalu file terhapus&quot;)
-public void tampil_alert_konfirmasi_lalu_file_terhapus() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Button submit nonaktif&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Button submit nonaktif&quot;)
-public void button_submit_nonaktif() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
+<td title='com.siloam.runner.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.runner.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Upload foto ttd dengan benar", "Upload Dokumen Testing"</td>
+<td><div><pre>org.testng.SkipException: TODO: implement me
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:116)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1290,33 +1010,12 @@ public void button_submit_nonaktif() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace913242382", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace913242382'><pre>io.cucumber.testng.UndefinedStepException: There were 3 undefined steps
-The step &quot;User hapus file&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User hapus file&quot;)
-public void user_hapus_file() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;tampil alert konfirmasi lalu file terhapus&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;tampil alert konfirmasi lalu file terhapus&quot;)
-public void tampil_alert_konfirmasi_lalu_file_terhapus() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Button submit nonaktif&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Button submit nonaktif&quot;)
-public void button_submit_nonaktif() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+	at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_ttd(UploadDocumentStepDef.java:98)
+	at ?.User tambah foto ttd(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:67)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1831141281", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1831141281'><pre>org.testng.SkipException: TODO: implement me
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:116)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1347,29 +1046,16 @@ public void button_submit_nonaktif() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+	at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_ttd(UploadDocumentStepDef.java:98)
+	at ?.User tambah foto ttd(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:67)
 </pre></div></td>
 <td>0</td>
-<td>com.siloam.RunnerFiles@2d8f65a4</td></tr>
+<td>com.siloam.runner.RunnerFiles@2d8f65a4</td></tr>
 <tr>
-<td title='com.siloam.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Preview dokumen perjanjian", "Upload Dokumen Testing"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: There were 2 undefined steps
-The step &quot;User check preview perjanjian&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User check preview perjanjian&quot;)
-public void user_check_preview_perjanjian() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Data sama dengan inputan&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Data sama dengan inputan&quot;)
-public void data_sama_dengan_inputan() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
+<td title='com.siloam.runner.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.runner.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Menambahkan lengkap foto yang diminta sistem", "Upload Dokumen Testing"</td>
+<td><div><pre>org.testng.SkipException: TODO: implement me
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:116)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1400,25 +1086,12 @@ public void data_sama_dengan_inputan() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace870322840", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace870322840'><pre>io.cucumber.testng.UndefinedStepException: There were 2 undefined steps
-The step &quot;User check preview perjanjian&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User check preview perjanjian&quot;)
-public void user_check_preview_perjanjian() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Data sama dengan inputan&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Data sama dengan inputan&quot;)
-public void data_sama_dengan_inputan() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+	at com.siloam.uploaddoc.UploadDocumentStepDef.user_upload_tiga_foto_yang_diminta_sistem(UploadDocumentStepDef.java:104)
+	at ?.User upload tiga foto yang diminta sistem(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:73)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2000648320", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2000648320'><pre>org.testng.SkipException: TODO: implement me
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:116)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1449,37 +1122,16 @@ public void data_sama_dengan_inputan() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+	at com.siloam.uploaddoc.UploadDocumentStepDef.user_upload_tiga_foto_yang_diminta_sistem(UploadDocumentStepDef.java:104)
+	at ?.User upload tiga foto yang diminta sistem(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:73)
 </pre></div></td>
 <td>0</td>
-<td>com.siloam.RunnerFiles@2d8f65a4</td></tr>
+<td>com.siloam.runner.RunnerFiles@2d8f65a4</td></tr>
 <tr>
-<td title='com.siloam.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Button submit", "Upload Dokumen Testing"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: There were 3 undefined steps
-The step &quot;User klik button submit&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User klik button submit&quot;)
-public void user_klik_button_submit() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;klik ok alert verifikasi&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;klik ok alert verifikasi&quot;)
-public void klik_ok_alert_verifikasi() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Menampilkan halaman input data dan notifikasi ttd digital berhasil&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Menampilkan halaman input data dan notifikasi ttd digital berhasil&quot;)
-public void menampilkan_halaman_input_data_dan_notifikasi_ttd_digital_berhasil() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
+<td title='com.siloam.runner.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.runner.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Klik button selanjutnya menu upload dokumen", "Upload Dokumen Testing"</td>
+<td><div><pre>org.testng.SkipException: TODO: implement me
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:116)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1510,33 +1162,12 @@ public void menampilkan_halaman_input_data_dan_notifikasi_ttd_digital_berhasil()
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace837246227", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace837246227'><pre>io.cucumber.testng.UndefinedStepException: There were 3 undefined steps
-The step &quot;User klik button submit&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User klik button submit&quot;)
-public void user_klik_button_submit() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;klik ok alert verifikasi&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;klik ok alert verifikasi&quot;)
-public void klik_ok_alert_verifikasi() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Menampilkan halaman input data dan notifikasi ttd digital berhasil&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Menampilkan halaman input data dan notifikasi ttd digital berhasil&quot;)
-public void menampilkan_halaman_input_data_dan_notifikasi_ttd_digital_berhasil() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+	at com.siloam.uploaddoc.UploadDocumentStepDef.user_klik_button_selanjutnya(UploadDocumentStepDef.java:122)
+	at ?.User klik button selanjutnya(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:78)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1114335860", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1114335860'><pre>org.testng.SkipException: TODO: implement me
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:116)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1567,1735 +1198,12 @@ public void menampilkan_halaman_input_data_dan_notifikasi_ttd_digital_berhasil()
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+	at com.siloam.uploaddoc.UploadDocumentStepDef.user_klik_button_selanjutnya(UploadDocumentStepDef.java:122)
+	at ?.User klik button selanjutnya(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:78)
 </pre></div></td>
 <td>0</td>
-<td>com.siloam.RunnerFiles@2d8f65a4</td></tr>
-<tr>
-<td title='com.siloam.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Akses menu upload document", "Upload Dokumen Testing"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: There were 2 undefined steps
-The step &quot;User sales akses menu upload&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User sales akses menu upload&quot;)
-public void user_sales_akses_menu_upload() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Menampilkan halaman upload document&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Menampilkan halaman upload document&quot;)
-public void menampilkan_halaman_upload_document() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1262237002", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1262237002'><pre>io.cucumber.testng.UndefinedStepException: There were 2 undefined steps
-The step &quot;User sales akses menu upload&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User sales akses menu upload&quot;)
-public void user_sales_akses_menu_upload() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Menampilkan halaman upload document&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Menampilkan halaman upload document&quot;)
-public void menampilkan_halaman_upload_document() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.siloam.RunnerFiles@2d8f65a4</td></tr>
-<tr>
-<td title='com.siloam.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Klik cancel button saat menambahkan foto faskes awal", "Upload Dokumen Testing"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: There were 3 undefined steps
-The step &quot;User tambah foto&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User tambah foto&quot;)
-public void user_tambah_foto() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;klik tombol cancel&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;klik tombol cancel&quot;)
-public void klik_tombol_cancel() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;halaman kembali ke menu upload tanpa foto terupload&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;halaman kembali ke menu upload tanpa foto terupload&quot;)
-public void halaman_kembali_ke_menu_upload_tanpa_foto_terupload() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2029754983", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2029754983'><pre>io.cucumber.testng.UndefinedStepException: There were 3 undefined steps
-The step &quot;User tambah foto&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User tambah foto&quot;)
-public void user_tambah_foto() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;klik tombol cancel&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;klik tombol cancel&quot;)
-public void klik_tombol_cancel() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;halaman kembali ke menu upload tanpa foto terupload&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;halaman kembali ke menu upload tanpa foto terupload&quot;)
-public void halaman_kembali_ke_menu_upload_tanpa_foto_terupload() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.siloam.RunnerFiles@2d8f65a4</td></tr>
-<tr>
-<td title='com.siloam.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Upload foto faskes awal file size diatas 5mb", "Upload Dokumen Testing"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: There were 3 undefined steps
-The step &quot;User tambah foto faskes awal&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User tambah foto faskes awal&quot;)
-public void user_tambah_foto_faskes_awal() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Upload tidak diproses&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Upload tidak diproses&quot;)
-public void upload_tidak_diproses() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Muncul notifikasi upload error&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Muncul notifikasi upload error&quot;)
-public void muncul_notifikasi_upload_error() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1946111918", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1946111918'><pre>io.cucumber.testng.UndefinedStepException: There were 3 undefined steps
-The step &quot;User tambah foto faskes awal&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User tambah foto faskes awal&quot;)
-public void user_tambah_foto_faskes_awal() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Upload tidak diproses&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Upload tidak diproses&quot;)
-public void upload_tidak_diproses() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Muncul notifikasi upload error&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Muncul notifikasi upload error&quot;)
-public void muncul_notifikasi_upload_error() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.siloam.RunnerFiles@2d8f65a4</td></tr>
-<tr>
-<td title='com.siloam.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Upload foto faskes awal dengan file selain format image", "Upload Dokumen Testing"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: There were 3 undefined steps
-The step &quot;User tambah foto faskes awal&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User tambah foto faskes awal&quot;)
-public void user_tambah_foto_faskes_awal() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Upload tidak diproses&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Upload tidak diproses&quot;)
-public void upload_tidak_diproses() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Muncul notifikasi upload error&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Muncul notifikasi upload error&quot;)
-public void muncul_notifikasi_upload_error() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace564817260", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace564817260'><pre>io.cucumber.testng.UndefinedStepException: There were 3 undefined steps
-The step &quot;User tambah foto faskes awal&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User tambah foto faskes awal&quot;)
-public void user_tambah_foto_faskes_awal() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Upload tidak diproses&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Upload tidak diproses&quot;)
-public void upload_tidak_diproses() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Muncul notifikasi upload error&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Muncul notifikasi upload error&quot;)
-public void muncul_notifikasi_upload_error() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.siloam.RunnerFiles@2d8f65a4</td></tr>
-<tr>
-<td title='com.siloam.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Upload foto faskes awal dengan benar", "Upload Dokumen Testing"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: There were 3 undefined steps
-The step &quot;User tambah foto faskes awal&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User tambah foto faskes awal&quot;)
-public void user_tambah_foto_faskes_awal() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Muncul pop up data berhasil diupload&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Muncul pop up data berhasil diupload&quot;)
-public void muncul_pop_up_data_berhasil_diupload() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Kembali ke menu sebelumnya menampilkan foto yang terupload&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Kembali ke menu sebelumnya menampilkan foto yang terupload&quot;)
-public void kembali_ke_menu_sebelumnya_menampilkan_foto_yang_terupload() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace194415222", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace194415222'><pre>io.cucumber.testng.UndefinedStepException: There were 3 undefined steps
-The step &quot;User tambah foto faskes awal&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User tambah foto faskes awal&quot;)
-public void user_tambah_foto_faskes_awal() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Muncul pop up data berhasil diupload&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Muncul pop up data berhasil diupload&quot;)
-public void muncul_pop_up_data_berhasil_diupload() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Kembali ke menu sebelumnya menampilkan foto yang terupload&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Kembali ke menu sebelumnya menampilkan foto yang terupload&quot;)
-public void kembali_ke_menu_sebelumnya_menampilkan_foto_yang_terupload() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.siloam.RunnerFiles@2d8f65a4</td></tr>
-<tr>
-<td title='com.siloam.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Klik cancel button saat menambahkan foto faskes tujuan", "Upload Dokumen Testing"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: There were 3 undefined steps
-The step &quot;User tambah foto&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User tambah foto&quot;)
-public void user_tambah_foto() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;klik tombol cancel&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;klik tombol cancel&quot;)
-public void klik_tombol_cancel() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;halaman kembali ke menu upload tanpa foto terupload&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;halaman kembali ke menu upload tanpa foto terupload&quot;)
-public void halaman_kembali_ke_menu_upload_tanpa_foto_terupload() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace798622145", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace798622145'><pre>io.cucumber.testng.UndefinedStepException: There were 3 undefined steps
-The step &quot;User tambah foto&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User tambah foto&quot;)
-public void user_tambah_foto() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;klik tombol cancel&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;klik tombol cancel&quot;)
-public void klik_tombol_cancel() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;halaman kembali ke menu upload tanpa foto terupload&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;halaman kembali ke menu upload tanpa foto terupload&quot;)
-public void halaman_kembali_ke_menu_upload_tanpa_foto_terupload() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.siloam.RunnerFiles@2d8f65a4</td></tr>
-<tr>
-<td title='com.siloam.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Upload foto faskes tujuan file size diatas 5mb", "Upload Dokumen Testing"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: There were 3 undefined steps
-The step &quot;User tambah foto faskes tujuan&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User tambah foto faskes tujuan&quot;)
-public void user_tambah_foto_faskes_tujuan() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Upload tidak diproses&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Upload tidak diproses&quot;)
-public void upload_tidak_diproses() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Muncul notifikasi upload error&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Muncul notifikasi upload error&quot;)
-public void muncul_notifikasi_upload_error() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace638695843", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace638695843'><pre>io.cucumber.testng.UndefinedStepException: There were 3 undefined steps
-The step &quot;User tambah foto faskes tujuan&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User tambah foto faskes tujuan&quot;)
-public void user_tambah_foto_faskes_tujuan() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Upload tidak diproses&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Upload tidak diproses&quot;)
-public void upload_tidak_diproses() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Muncul notifikasi upload error&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Muncul notifikasi upload error&quot;)
-public void muncul_notifikasi_upload_error() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.siloam.RunnerFiles@2d8f65a4</td></tr>
-<tr>
-<td title='com.siloam.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Upload foto faskes tujuan dengan file selain format image", "Upload Dokumen Testing"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: There were 3 undefined steps
-The step &quot;User tambah foto faskes tujuan&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User tambah foto faskes tujuan&quot;)
-public void user_tambah_foto_faskes_tujuan() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Upload tidak diproses&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Upload tidak diproses&quot;)
-public void upload_tidak_diproses() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Muncul notifikasi upload error&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Muncul notifikasi upload error&quot;)
-public void muncul_notifikasi_upload_error() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1411543296", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1411543296'><pre>io.cucumber.testng.UndefinedStepException: There were 3 undefined steps
-The step &quot;User tambah foto faskes tujuan&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User tambah foto faskes tujuan&quot;)
-public void user_tambah_foto_faskes_tujuan() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Upload tidak diproses&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Upload tidak diproses&quot;)
-public void upload_tidak_diproses() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Muncul notifikasi upload error&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Muncul notifikasi upload error&quot;)
-public void muncul_notifikasi_upload_error() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.siloam.RunnerFiles@2d8f65a4</td></tr>
-<tr>
-<td title='com.siloam.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Upload foto faskes tujuan dengan benar", "Upload Dokumen Testing"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: There were 3 undefined steps
-The step &quot;User tambah foto faskes tujuan&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User tambah foto faskes tujuan&quot;)
-public void user_tambah_foto_faskes_tujuan() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Muncul pop up data berhasil diupload&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Muncul pop up data berhasil diupload&quot;)
-public void muncul_pop_up_data_berhasil_diupload() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Kembali ke menu sebelumnya menampilkan foto yang terupload&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Kembali ke menu sebelumnya menampilkan foto yang terupload&quot;)
-public void kembali_ke_menu_sebelumnya_menampilkan_foto_yang_terupload() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1800967368", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1800967368'><pre>io.cucumber.testng.UndefinedStepException: There were 3 undefined steps
-The step &quot;User tambah foto faskes tujuan&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User tambah foto faskes tujuan&quot;)
-public void user_tambah_foto_faskes_tujuan() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Muncul pop up data berhasil diupload&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Muncul pop up data berhasil diupload&quot;)
-public void muncul_pop_up_data_berhasil_diupload() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Kembali ke menu sebelumnya menampilkan foto yang terupload&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Kembali ke menu sebelumnya menampilkan foto yang terupload&quot;)
-public void kembali_ke_menu_sebelumnya_menampilkan_foto_yang_terupload() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.siloam.RunnerFiles@2d8f65a4</td></tr>
-<tr>
-<td title='com.siloam.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Klik cancel button saat menambahkan foto ttd", "Upload Dokumen Testing"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: There were 3 undefined steps
-The step &quot;User tambah foto&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User tambah foto&quot;)
-public void user_tambah_foto() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;klik tombol cancel&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;klik tombol cancel&quot;)
-public void klik_tombol_cancel() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;halaman kembali ke menu upload tanpa foto terupload&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;halaman kembali ke menu upload tanpa foto terupload&quot;)
-public void halaman_kembali_ke_menu_upload_tanpa_foto_terupload() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace338887787", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace338887787'><pre>io.cucumber.testng.UndefinedStepException: There were 3 undefined steps
-The step &quot;User tambah foto&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User tambah foto&quot;)
-public void user_tambah_foto() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;klik tombol cancel&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;klik tombol cancel&quot;)
-public void klik_tombol_cancel() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;halaman kembali ke menu upload tanpa foto terupload&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;halaman kembali ke menu upload tanpa foto terupload&quot;)
-public void halaman_kembali_ke_menu_upload_tanpa_foto_terupload() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.siloam.RunnerFiles@2d8f65a4</td></tr>
-<tr>
-<td title='com.siloam.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Upload foto ttd file size diatas 5mb", "Upload Dokumen Testing"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: There were 3 undefined steps
-The step &quot;User tambah foto ttd&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User tambah foto ttd&quot;)
-public void user_tambah_foto_ttd() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Upload tidak diproses&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Upload tidak diproses&quot;)
-public void upload_tidak_diproses() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Muncul notifikasi upload error&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Muncul notifikasi upload error&quot;)
-public void muncul_notifikasi_upload_error() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1061448687", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1061448687'><pre>io.cucumber.testng.UndefinedStepException: There were 3 undefined steps
-The step &quot;User tambah foto ttd&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User tambah foto ttd&quot;)
-public void user_tambah_foto_ttd() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Upload tidak diproses&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Upload tidak diproses&quot;)
-public void upload_tidak_diproses() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Muncul notifikasi upload error&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Muncul notifikasi upload error&quot;)
-public void muncul_notifikasi_upload_error() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.siloam.RunnerFiles@2d8f65a4</td></tr>
-<tr>
-<td title='com.siloam.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Upload foto ttd dengan file selain format image", "Upload Dokumen Testing"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: There were 3 undefined steps
-The step &quot;User tambah foto ttd&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User tambah foto ttd&quot;)
-public void user_tambah_foto_ttd() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Upload tidak diproses&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Upload tidak diproses&quot;)
-public void upload_tidak_diproses() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Muncul notifikasi upload error&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Muncul notifikasi upload error&quot;)
-public void muncul_notifikasi_upload_error() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2015999862", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2015999862'><pre>io.cucumber.testng.UndefinedStepException: There were 3 undefined steps
-The step &quot;User tambah foto ttd&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User tambah foto ttd&quot;)
-public void user_tambah_foto_ttd() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Upload tidak diproses&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Upload tidak diproses&quot;)
-public void upload_tidak_diproses() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Muncul notifikasi upload error&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Muncul notifikasi upload error&quot;)
-public void muncul_notifikasi_upload_error() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.siloam.RunnerFiles@2d8f65a4</td></tr>
-<tr>
-<td title='com.siloam.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Upload foto ttd dengan benar", "Upload Dokumen Testing"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: There were 3 undefined steps
-The step &quot;User tambah foto ttd&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User tambah foto ttd&quot;)
-public void user_tambah_foto_ttd() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Muncul pop up data berhasil diupload&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Muncul pop up data berhasil diupload&quot;)
-public void muncul_pop_up_data_berhasil_diupload() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Kembali ke menu sebelumnya menampilkan foto yang terupload&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Kembali ke menu sebelumnya menampilkan foto yang terupload&quot;)
-public void kembali_ke_menu_sebelumnya_menampilkan_foto_yang_terupload() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1467515503", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1467515503'><pre>io.cucumber.testng.UndefinedStepException: There were 3 undefined steps
-The step &quot;User tambah foto ttd&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User tambah foto ttd&quot;)
-public void user_tambah_foto_ttd() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Muncul pop up data berhasil diupload&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Muncul pop up data berhasil diupload&quot;)
-public void muncul_pop_up_data_berhasil_diupload() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Kembali ke menu sebelumnya menampilkan foto yang terupload&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Kembali ke menu sebelumnya menampilkan foto yang terupload&quot;)
-public void kembali_ke_menu_sebelumnya_menampilkan_foto_yang_terupload() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.siloam.RunnerFiles@2d8f65a4</td></tr>
-<tr>
-<td title='com.siloam.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Menambahkan lengkap foto yang diminta sistem", "Upload Dokumen Testing"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: There were 3 undefined steps
-The step &quot;User upload tiga foto yang diminta sistem&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User upload tiga foto yang diminta sistem&quot;)
-public void user_upload_tiga_foto_yang_diminta_sistem() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Tampil notifikasi Terima kasih dokumen anda sudah lengkap!&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Tampil notifikasi Terima kasih dokumen anda sudah lengkap!&quot;)
-public void tampil_notifikasi_Terima_kasih_dokumen_anda_sudah_lengkap() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Tombol selanjutnya menuju menu TTD aktif&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Tombol selanjutnya menuju menu TTD aktif&quot;)
-public void tombol_selanjutnya_menuju_menu_TTD_aktif() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1533330615", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1533330615'><pre>io.cucumber.testng.UndefinedStepException: There were 3 undefined steps
-The step &quot;User upload tiga foto yang diminta sistem&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User upload tiga foto yang diminta sistem&quot;)
-public void user_upload_tiga_foto_yang_diminta_sistem() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Tampil notifikasi Terima kasih dokumen anda sudah lengkap!&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Tampil notifikasi Terima kasih dokumen anda sudah lengkap!&quot;)
-public void tampil_notifikasi_Terima_kasih_dokumen_anda_sudah_lengkap() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Tombol selanjutnya menuju menu TTD aktif&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Tombol selanjutnya menuju menu TTD aktif&quot;)
-public void tombol_selanjutnya_menuju_menu_TTD_aktif() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.siloam.RunnerFiles@2d8f65a4</td></tr>
-<tr>
-<td title='com.siloam.RunnerFiles.runScenario()'><b>runScenario</b><br>Test class: com.siloam.RunnerFiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Klik button selanjutnya menu upload dokumen", "Upload Dokumen Testing"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: There were 3 undefined steps
-The step &quot;User klik button selanjutnya&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User klik button selanjutnya&quot;)
-public void user_klik_button_selanjutnya() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Menampilkan alert verifikasi lanjut ke tahap selanjutnya&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Menampilkan alert verifikasi lanjut ke tahap selanjutnya&quot;)
-public void menampilkan_alert_verifikasi_lanjut_ke_tahap_selanjutnya() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Menampilkan halaman menu ttd dengan review data&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Menampilkan halaman menu ttd dengan review data&quot;)
-public void menampilkan_halaman_menu_ttd_dengan_review_data() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1197721383", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1197721383'><pre>io.cucumber.testng.UndefinedStepException: There were 3 undefined steps
-The step &quot;User klik button selanjutnya&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User klik button selanjutnya&quot;)
-public void user_klik_button_selanjutnya() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Menampilkan alert verifikasi lanjut ke tahap selanjutnya&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Menampilkan alert verifikasi lanjut ke tahap selanjutnya&quot;)
-public void menampilkan_alert_verifikasi_lanjut_ke_tahap_selanjutnya() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-The step &quot;Menampilkan halaman menu ttd dengan review data&quot; is undefined. You can implement it using the snippet(s) below:
-
-@Then(&quot;Menampilkan halaman menu ttd dengan review data&quot;)
-public void menampilkan_halaman_menu_ttd_dengan_review_data() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:112)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.siloam.RunnerFiles@2d8f65a4</td></tr>
+<td>com.siloam.runner.RunnerFiles@2d8f65a4</td></tr>
 </table><p>
 </body>
 </html>

@@ -22,17 +22,21 @@ import com.siloam.plugin.LoginStep;
 public class LoginStepDef {
 	
 
-	private static WebDriver driver;
-	private LoginStep loginPage;
+	WebDriver driver = null;
+	String url = "https://dev.ptdika.com/siloam/";
+//	private LoginStep loginPage;
 	
 	
 	
 	@Given("User mengakses url")
 	public void user_mengakses_url() {
-		DriverSet.setDriver();
-		driver.navigate().to(DriverSet.url);
+		System.setProperty("webdriver.chrome.driver", "C:\\webdriver\\chromedriver.exe");
+		this.driver = new ChromeDriver();
+		this.driver.navigate().to(this.url);
 		driver.manage().window().maximize();
-		loginPage.loginSales();
+//		DriverSet.setDriver();
+//		driver.navigate().to(DriverSet.url);
+//		loginPage.loginSales();
 	}
 
 	@Given("User berada di dalam halaman login")
@@ -47,8 +51,8 @@ public class LoginStepDef {
 
 	@When("User memasukan username {string}")
 	public void user_memasukan_Username(String string) {
-	    driver.findElement(By.xpath("//input[@placeholder='Username']"))
-	    					.sendKeys(string);
+//	    driver.findElement(By.xpath("//input[@placeholder='Username']"))
+//	    					.sendKeys(string);
 //	    test.log(LogStatus.PASS, "User memasukan Username");
 	}
 	
