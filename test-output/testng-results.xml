@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="14" passed="0" failed="0" skipped="14">
   <reporter-output>
   </reporter-output>
@@ -15,6 +16,24 @@
           </reporter-output>
         </test-method> <!-- setUpClass -->
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.siloam.runner.RunnerFiles@482bce4f]" started-at="2022-08-11T20:38:36 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-11T20:38:36 WIB" duration-ms="187" status="SKIP">
+=======
+<testng-results ignored="0" total="15" passed="0" failed="1" skipped="14">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-09T23:58:40 WIB" name="Default suite" finished-at="2022-08-09T23:58:42 WIB" duration-ms="1901">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.siloam.runner.RunnerFiles@60704c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-08-09T23:58:40 WIB" name="Default test" finished-at="2022-08-09T23:58:42 WIB" duration-ms="1901">
+      <class name="com.siloam.runner.RunnerFiles">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.siloam.runner.RunnerFiles@60704c]" started-at="2022-08-09T23:58:40 WIB" name="setUpClass" finished-at="2022-08-09T23:58:41 WIB" duration-ms="855" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.siloam.runner.RunnerFiles@60704c]" started-at="2022-08-09T23:58:41 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-09T23:58:41 WIB" duration-ms="323" status="FAIL">
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
           <params>
             <param index="0">
               <value>
@@ -27,6 +46,7 @@
               </value>
             </param>
           </params>
+<<<<<<< HEAD
           <exception class="io.cucumber.testng.UndefinedStepException">
             <message>
               <![CDATA[There were 2 undefined steps
@@ -46,6 +66,39 @@ public void layout_menu_dihilangkan_diperlebar() {
     throw new io.cucumber.java.PendingException();
 }
 ]]>
+=======
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA['void com.siloam.plugin.DriverSet.setDriver()']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: 'void com.siloam.plugin.DriverSet.setDriver()'
+at com.siloam.plugin.LoginStep.loginSales(LoginStep.java:25)
+at com.siloam.uploaddoc.UploadDocumentStepDef.user_sales_akses_url(UploadDocumentStepDef.java:24)
+at ✽.User sales akses url(file:///home/ancient/Documents/MagangSQA/sqasiloamteamb/src/test/resources/features/UploadDocument.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.siloam.runner.RunnerFiles@60704c]" started-at="2022-08-09T23:58:41 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-09T23:58:41 WIB" duration-ms="18" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Klik cancel button saat menambahkan foto faskes awal"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Upload Dokumen Testing"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[TODO: implement me]]>
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
             </message>
             <full-stacktrace>
               <![CDATA[io.cucumber.testng.UndefinedStepException: There were 2 undefined steps
@@ -69,9 +122,15 @@ at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResult
 at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+=======
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -80,7 +139,11 @@ at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+<<<<<<< HEAD
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+=======
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 at org.testng.TestRunner.privateRun(TestRunner.java:766)
 at org.testng.TestRunner.run(TestRunner.java:587)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
@@ -96,13 +159,23 @@ at org.testng.TestNG.run(TestNG.java:1007)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<<<<<<< HEAD
+=======
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto(UploadDocumentStepDef.java:44)
+at ✽.User tambah foto(file:///home/ancient/Documents/MagangSQA/sqasiloamteamb/src/test/resources/features/UploadDocument.feature:10)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 ]]>
             </full-stacktrace>
           </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.siloam.runner.RunnerFiles@482bce4f]" started-at="2022-08-11T20:38:36 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-11T20:38:36 WIB" duration-ms="9" status="SKIP">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.siloam.runner.RunnerFiles@60704c]" started-at="2022-08-09T23:58:41 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-09T23:58:42 WIB" duration-ms="14" status="SKIP">
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
           <params>
             <param index="0">
               <value>
@@ -157,9 +230,15 @@ at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResult
 at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+=======
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -168,7 +247,11 @@ at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+<<<<<<< HEAD
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+=======
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 at org.testng.TestRunner.privateRun(TestRunner.java:766)
 at org.testng.TestRunner.run(TestRunner.java:587)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
@@ -184,13 +267,23 @@ at org.testng.TestNG.run(TestNG.java:1007)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<<<<<<< HEAD
+=======
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_faskes_awal(UploadDocumentStepDef.java:62)
+at ✽.User tambah foto faskes awal(file:///home/ancient/Documents/MagangSQA/sqasiloamteamb/src/test/resources/features/UploadDocument.feature:15)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 ]]>
             </full-stacktrace>
           </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.siloam.runner.RunnerFiles@482bce4f]" started-at="2022-08-11T20:38:36 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-11T20:38:36 WIB" duration-ms="11" status="SKIP">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.siloam.runner.RunnerFiles@60704c]" started-at="2022-08-09T23:58:42 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-09T23:58:42 WIB" duration-ms="19" status="SKIP">
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
           <params>
             <param index="0">
               <value>
@@ -245,9 +338,15 @@ at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResult
 at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+=======
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -256,7 +355,11 @@ at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+<<<<<<< HEAD
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+=======
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 at org.testng.TestRunner.privateRun(TestRunner.java:766)
 at org.testng.TestRunner.run(TestRunner.java:587)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
@@ -272,13 +375,23 @@ at org.testng.TestNG.run(TestNG.java:1007)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<<<<<<< HEAD
+=======
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_faskes_awal(UploadDocumentStepDef.java:62)
+at ✽.User tambah foto faskes awal(file:///home/ancient/Documents/MagangSQA/sqasiloamteamb/src/test/resources/features/UploadDocument.feature:20)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 ]]>
             </full-stacktrace>
           </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.siloam.runner.RunnerFiles@482bce4f]" started-at="2022-08-11T20:38:36 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-11T20:38:36 WIB" duration-ms="5" status="SKIP">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.siloam.runner.RunnerFiles@60704c]" started-at="2022-08-09T23:58:42 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-09T23:58:42 WIB" duration-ms="12" status="SKIP">
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
           <params>
             <param index="0">
               <value>
@@ -333,9 +446,15 @@ at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResult
 at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+=======
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -344,7 +463,11 @@ at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+<<<<<<< HEAD
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+=======
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 at org.testng.TestRunner.privateRun(TestRunner.java:766)
 at org.testng.TestRunner.run(TestRunner.java:587)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
@@ -360,13 +483,23 @@ at org.testng.TestNG.run(TestNG.java:1007)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<<<<<<< HEAD
+=======
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_faskes_awal(UploadDocumentStepDef.java:62)
+at ✽.User tambah foto faskes awal(file:///home/ancient/Documents/MagangSQA/sqasiloamteamb/src/test/resources/features/UploadDocument.feature:25)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 ]]>
             </full-stacktrace>
           </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.siloam.runner.RunnerFiles@482bce4f]" started-at="2022-08-11T20:38:36 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-11T20:38:36 WIB" duration-ms="6" status="SKIP">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.siloam.runner.RunnerFiles@60704c]" started-at="2022-08-09T23:58:42 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-09T23:58:42 WIB" duration-ms="17" status="SKIP">
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
           <params>
             <param index="0">
               <value>
@@ -421,9 +554,15 @@ at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResult
 at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+=======
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -432,7 +571,11 @@ at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+<<<<<<< HEAD
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+=======
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 at org.testng.TestRunner.privateRun(TestRunner.java:766)
 at org.testng.TestRunner.run(TestRunner.java:587)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
@@ -448,13 +591,23 @@ at org.testng.TestNG.run(TestNG.java:1007)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<<<<<<< HEAD
+=======
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto(UploadDocumentStepDef.java:44)
+at ✽.User tambah foto(file:///home/ancient/Documents/MagangSQA/sqasiloamteamb/src/test/resources/features/UploadDocument.feature:31)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 ]]>
             </full-stacktrace>
           </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.siloam.runner.RunnerFiles@482bce4f]" started-at="2022-08-11T20:38:36 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-11T20:38:36 WIB" duration-ms="10" status="SKIP">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.siloam.runner.RunnerFiles@60704c]" started-at="2022-08-09T23:58:42 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-09T23:58:42 WIB" duration-ms="19" status="SKIP">
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
           <params>
             <param index="0">
               <value>
@@ -509,9 +662,15 @@ at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResult
 at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+=======
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -520,7 +679,11 @@ at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+<<<<<<< HEAD
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+=======
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 at org.testng.TestRunner.privateRun(TestRunner.java:766)
 at org.testng.TestRunner.run(TestRunner.java:587)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
@@ -536,13 +699,23 @@ at org.testng.TestNG.run(TestNG.java:1007)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<<<<<<< HEAD
+=======
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_faskes_tujuan(UploadDocumentStepDef.java:92)
+at ✽.User tambah foto faskes tujuan(file:///home/ancient/Documents/MagangSQA/sqasiloamteamb/src/test/resources/features/UploadDocument.feature:36)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 ]]>
             </full-stacktrace>
           </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.siloam.runner.RunnerFiles@482bce4f]" started-at="2022-08-11T20:38:36 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-11T20:38:36 WIB" duration-ms="8" status="SKIP">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.siloam.runner.RunnerFiles@60704c]" started-at="2022-08-09T23:58:42 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-09T23:58:42 WIB" duration-ms="23" status="SKIP">
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
           <params>
             <param index="0">
               <value>
@@ -597,9 +770,15 @@ at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResult
 at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+=======
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -608,7 +787,11 @@ at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+<<<<<<< HEAD
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+=======
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 at org.testng.TestRunner.privateRun(TestRunner.java:766)
 at org.testng.TestRunner.run(TestRunner.java:587)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
@@ -624,13 +807,23 @@ at org.testng.TestNG.run(TestNG.java:1007)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<<<<<<< HEAD
+=======
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_faskes_tujuan(UploadDocumentStepDef.java:92)
+at ✽.User tambah foto faskes tujuan(file:///home/ancient/Documents/MagangSQA/sqasiloamteamb/src/test/resources/features/UploadDocument.feature:41)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 ]]>
             </full-stacktrace>
           </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.siloam.runner.RunnerFiles@482bce4f]" started-at="2022-08-11T20:38:36 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-11T20:38:36 WIB" duration-ms="6" status="SKIP">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.siloam.runner.RunnerFiles@60704c]" started-at="2022-08-09T23:58:42 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-09T23:58:42 WIB" duration-ms="21" status="SKIP">
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
           <params>
             <param index="0">
               <value>
@@ -685,9 +878,15 @@ at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResult
 at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+=======
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -696,7 +895,11 @@ at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+<<<<<<< HEAD
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+=======
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 at org.testng.TestRunner.privateRun(TestRunner.java:766)
 at org.testng.TestRunner.run(TestRunner.java:587)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
@@ -712,13 +915,23 @@ at org.testng.TestNG.run(TestNG.java:1007)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<<<<<<< HEAD
+=======
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_faskes_tujuan(UploadDocumentStepDef.java:92)
+at ✽.User tambah foto faskes tujuan(file:///home/ancient/Documents/MagangSQA/sqasiloamteamb/src/test/resources/features/UploadDocument.feature:46)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 ]]>
             </full-stacktrace>
           </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.siloam.runner.RunnerFiles@482bce4f]" started-at="2022-08-11T20:38:36 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-11T20:38:36 WIB" duration-ms="5" status="SKIP">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.siloam.runner.RunnerFiles@60704c]" started-at="2022-08-09T23:58:42 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-09T23:58:42 WIB" duration-ms="11" status="SKIP">
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
           <params>
             <param index="0">
               <value>
@@ -773,9 +986,15 @@ at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResult
 at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+=======
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -784,7 +1003,11 @@ at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+<<<<<<< HEAD
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+=======
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 at org.testng.TestRunner.privateRun(TestRunner.java:766)
 at org.testng.TestRunner.run(TestRunner.java:587)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
@@ -800,13 +1023,23 @@ at org.testng.TestNG.run(TestNG.java:1007)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<<<<<<< HEAD
+=======
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto(UploadDocumentStepDef.java:44)
+at ✽.User tambah foto(file:///home/ancient/Documents/MagangSQA/sqasiloamteamb/src/test/resources/features/UploadDocument.feature:52)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 ]]>
             </full-stacktrace>
           </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.siloam.runner.RunnerFiles@482bce4f]" started-at="2022-08-11T20:38:36 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-11T20:38:36 WIB" duration-ms="8" status="SKIP">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.siloam.runner.RunnerFiles@60704c]" started-at="2022-08-09T23:58:42 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-09T23:58:42 WIB" duration-ms="12" status="SKIP">
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
           <params>
             <param index="0">
               <value>
@@ -861,9 +1094,15 @@ at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResult
 at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+=======
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -872,7 +1111,11 @@ at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+<<<<<<< HEAD
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+=======
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 at org.testng.TestRunner.privateRun(TestRunner.java:766)
 at org.testng.TestRunner.run(TestRunner.java:587)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
@@ -888,13 +1131,23 @@ at org.testng.TestNG.run(TestNG.java:1007)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<<<<<<< HEAD
+=======
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_ttd(UploadDocumentStepDef.java:98)
+at ✽.User tambah foto ttd(file:///home/ancient/Documents/MagangSQA/sqasiloamteamb/src/test/resources/features/UploadDocument.feature:57)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 ]]>
             </full-stacktrace>
           </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.siloam.runner.RunnerFiles@482bce4f]" started-at="2022-08-11T20:38:36 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-11T20:38:36 WIB" duration-ms="6" status="SKIP">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.siloam.runner.RunnerFiles@60704c]" started-at="2022-08-09T23:58:42 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-09T23:58:42 WIB" duration-ms="12" status="SKIP">
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
           <params>
             <param index="0">
               <value>
@@ -965,9 +1218,15 @@ at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResult
 at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+=======
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -976,7 +1235,11 @@ at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+<<<<<<< HEAD
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+=======
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 at org.testng.TestRunner.privateRun(TestRunner.java:766)
 at org.testng.TestRunner.run(TestRunner.java:587)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
@@ -992,13 +1255,23 @@ at org.testng.TestNG.run(TestNG.java:1007)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<<<<<<< HEAD
+=======
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_ttd(UploadDocumentStepDef.java:98)
+at ✽.User tambah foto ttd(file:///home/ancient/Documents/MagangSQA/sqasiloamteamb/src/test/resources/features/UploadDocument.feature:62)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 ]]>
             </full-stacktrace>
           </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.siloam.runner.RunnerFiles@482bce4f]" started-at="2022-08-11T20:38:36 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-11T20:38:36 WIB" duration-ms="7" status="SKIP">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.siloam.runner.RunnerFiles@60704c]" started-at="2022-08-09T23:58:42 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-09T23:58:42 WIB" duration-ms="12" status="SKIP">
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
           <params>
             <param index="0">
               <value>
@@ -1069,9 +1342,15 @@ at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResult
 at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+=======
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -1080,7 +1359,11 @@ at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+<<<<<<< HEAD
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+=======
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 at org.testng.TestRunner.privateRun(TestRunner.java:766)
 at org.testng.TestRunner.run(TestRunner.java:587)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
@@ -1096,13 +1379,23 @@ at org.testng.TestNG.run(TestNG.java:1007)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<<<<<<< HEAD
+=======
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+at com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_ttd(UploadDocumentStepDef.java:98)
+at ✽.User tambah foto ttd(file:///home/ancient/Documents/MagangSQA/sqasiloamteamb/src/test/resources/features/UploadDocument.feature:67)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 ]]>
             </full-stacktrace>
           </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.siloam.runner.RunnerFiles@482bce4f]" started-at="2022-08-11T20:38:36 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-11T20:38:36 WIB" duration-ms="15" status="SKIP">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.siloam.runner.RunnerFiles@60704c]" started-at="2022-08-09T23:58:42 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-09T23:58:42 WIB" duration-ms="21" status="SKIP">
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
           <params>
             <param index="0">
               <value>
@@ -1157,9 +1450,15 @@ at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResult
 at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+=======
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -1168,7 +1467,11 @@ at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+<<<<<<< HEAD
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+=======
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 at org.testng.TestRunner.privateRun(TestRunner.java:766)
 at org.testng.TestRunner.run(TestRunner.java:587)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
@@ -1184,13 +1487,23 @@ at org.testng.TestNG.run(TestNG.java:1007)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<<<<<<< HEAD
+=======
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+at com.siloam.uploaddoc.UploadDocumentStepDef.user_upload_tiga_foto_yang_diminta_sistem(UploadDocumentStepDef.java:104)
+at ✽.User upload tiga foto yang diminta sistem(file:///home/ancient/Documents/MagangSQA/sqasiloamteamb/src/test/resources/features/UploadDocument.feature:73)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 ]]>
             </full-stacktrace>
           </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.siloam.runner.RunnerFiles@482bce4f]" started-at="2022-08-11T20:38:36 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-11T20:38:36 WIB" duration-ms="6" status="SKIP">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.siloam.runner.RunnerFiles@60704c]" started-at="2022-08-09T23:58:42 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-09T23:58:42 WIB" duration-ms="9" status="SKIP">
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
           <params>
             <param index="0">
               <value>
@@ -1261,9 +1574,15 @@ at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResult
 at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
 at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<<<<<<< HEAD
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+=======
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -1272,7 +1591,11 @@ at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+<<<<<<< HEAD
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+=======
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 at org.testng.TestRunner.privateRun(TestRunner.java:766)
 at org.testng.TestRunner.run(TestRunner.java:587)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
@@ -1288,13 +1611,23 @@ at org.testng.TestNG.run(TestNG.java:1007)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<<<<<<< HEAD
+=======
+Caused by: io.cucumber.java.PendingException: TODO: implement me
+at com.siloam.uploaddoc.UploadDocumentStepDef.user_klik_button_selanjutnya(UploadDocumentStepDef.java:122)
+at ✽.User klik button selanjutnya(file:///home/ancient/Documents/MagangSQA/sqasiloamteamb/src/test/resources/features/UploadDocument.feature:78)
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
 ]]>
             </full-stacktrace>
           </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.siloam.runner.RunnerFiles@482bce4f]" started-at="2022-08-11T20:38:36 WIB" name="tearDownClass" finished-at="2022-08-11T20:38:37 WIB" duration-ms="223" status="PASS">
+=======
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.siloam.runner.RunnerFiles@60704c]" started-at="2022-08-09T23:58:42 WIB" name="tearDownClass" finished-at="2022-08-09T23:58:42 WIB" duration-ms="317" status="PASS">
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
 <suite name="KelompokB">
   <test thread-count="5" name="Siloam">
   	<classes>
@@ -7,3 +8,12 @@
   	</classes>
   </test> <!-- Siloam -->
 </suite> <!-- KelompokB -->
+=======
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <classes>
+  	<class name="runners.RunnerFiles"></class>
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+>>>>>>> 613057208fa734a42df5b140688e1a593001d698
