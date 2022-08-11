@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-08-09T11:25:09.655Z",
+        "start_timestamp": "2022-08-09T16:58:41.929Z",
         "line": 3,
         "name": "Akses menu upload document",
         "description": "",
@@ -13,8 +13,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d104.0.5112.79)\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027LAPTOP-BUM46IKV\u0027, ip: \u0027192.168.1.7\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_333\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.79, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\\Users\\Ben\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:61596}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: d587abf8ee83155dbaa08ae0a8f8d0d4\n*** Element info: {Using\u003dxpath, value\u003d//input[@name\u003d\"username\"]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\r\n\tat com.siloam.plugin.LoginStep.loginSales(LoginStep.java:27)\r\n\tat com.siloam.uploaddoc.UploadDocumentStepDef.user_sales_akses_url(UploadDocumentStepDef.java:24)\r\n\tat ✽.User sales akses url(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:4)\r\n",
-              "duration": 25446000000,
+              "error_message": "java.lang.NoSuchMethodError: \u0027void com.siloam.plugin.DriverSet.setDriver()\u0027\n\tat com.siloam.plugin.LoginStep.loginSales(LoginStep.java:25)\n\tat com.siloam.uploaddoc.UploadDocumentStepDef.user_sales_akses_url(UploadDocumentStepDef.java:24)\n\tat ✽.User sales akses url(file:///home/ancient/Documents/MagangSQA/sqasiloamteamb/src/test/resources/features/UploadDocument.feature:4)\n",
+              "duration": 12361000,
               "status": "failed"
             },
             "line": 4,
@@ -26,6 +26,7 @@
           },
           {
             "result": {
+              "duration": 122000,
               "status": "skipped"
             },
             "line": 5,
@@ -37,6 +38,7 @@
           },
           {
             "result": {
+              "duration": 12000,
               "status": "skipped"
             },
             "line": 6,
@@ -49,7 +51,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-08-09T11:25:35.119Z",
+        "start_timestamp": "2022-08-09T16:58:41.978Z",
         "line": 9,
         "name": "Klik cancel button saat menambahkan foto faskes awal",
         "description": "",
@@ -59,8 +61,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto(UploadDocumentStepDef.java:44)\r\n\tat ✽.User tambah foto(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:10)\r\n",
-              "duration": 1000000,
+              "error_message": "io.cucumber.java.PendingException: TODO: implement me\n\tat com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto(UploadDocumentStepDef.java:44)\n\tat ✽.User tambah foto(file:///home/ancient/Documents/MagangSQA/sqasiloamteamb/src/test/resources/features/UploadDocument.feature:10)\n",
+              "duration": 4079000,
               "status": "pending"
             },
             "line": 10,
@@ -72,6 +74,7 @@
           },
           {
             "result": {
+              "duration": 75000,
               "status": "skipped"
             },
             "line": 11,
@@ -83,6 +86,7 @@
           },
           {
             "result": {
+              "duration": 16000,
               "status": "skipped"
             },
             "line": 12,
@@ -95,7 +99,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-08-09T11:25:35.125Z",
+        "start_timestamp": "2022-08-09T16:58:42.001Z",
         "line": 14,
         "name": "Upload foto faskes awal file size diatas 5mb",
         "description": "",
@@ -105,7 +109,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_faskes_awal(UploadDocumentStepDef.java:62)\r\n\tat ✽.User tambah foto faskes awal(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:15)\r\n",
+              "error_message": "io.cucumber.java.PendingException: TODO: implement me\n\tat com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_faskes_awal(UploadDocumentStepDef.java:62)\n\tat ✽.User tambah foto faskes awal(file:///home/ancient/Documents/MagangSQA/sqasiloamteamb/src/test/resources/features/UploadDocument.feature:15)\n",
+              "duration": 546000,
               "status": "pending"
             },
             "line": 15,
@@ -117,6 +122,7 @@
           },
           {
             "result": {
+              "duration": 42000,
               "status": "skipped"
             },
             "line": 16,
@@ -128,6 +134,7 @@
           },
           {
             "result": {
+              "duration": 15000,
               "status": "skipped"
             },
             "line": 17,
@@ -140,7 +147,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-08-09T11:25:35.131Z",
+        "start_timestamp": "2022-08-09T16:58:42.022Z",
         "line": 19,
         "name": "Upload foto faskes awal dengan file selain format image",
         "description": "",
@@ -150,7 +157,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_faskes_awal(UploadDocumentStepDef.java:62)\r\n\tat ✽.User tambah foto faskes awal(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:20)\r\n",
+              "error_message": "io.cucumber.java.PendingException: TODO: implement me\n\tat com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_faskes_awal(UploadDocumentStepDef.java:62)\n\tat ✽.User tambah foto faskes awal(file:///home/ancient/Documents/MagangSQA/sqasiloamteamb/src/test/resources/features/UploadDocument.feature:20)\n",
+              "duration": 1154000,
               "status": "pending"
             },
             "line": 20,
@@ -162,6 +170,7 @@
           },
           {
             "result": {
+              "duration": 118000,
               "status": "skipped"
             },
             "line": 21,
@@ -173,6 +182,7 @@
           },
           {
             "result": {
+              "duration": 54000,
               "status": "skipped"
             },
             "line": 22,
@@ -185,7 +195,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-08-09T11:25:35.137Z",
+        "start_timestamp": "2022-08-09T16:58:42.045Z",
         "line": 24,
         "name": "Upload foto faskes awal dengan benar",
         "description": "",
@@ -195,7 +205,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_faskes_awal(UploadDocumentStepDef.java:62)\r\n\tat ✽.User tambah foto faskes awal(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:25)\r\n",
+              "error_message": "io.cucumber.java.PendingException: TODO: implement me\n\tat com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_faskes_awal(UploadDocumentStepDef.java:62)\n\tat ✽.User tambah foto faskes awal(file:///home/ancient/Documents/MagangSQA/sqasiloamteamb/src/test/resources/features/UploadDocument.feature:25)\n",
+              "duration": 534000,
               "status": "pending"
             },
             "line": 25,
@@ -207,6 +218,7 @@
           },
           {
             "result": {
+              "duration": 38000,
               "status": "skipped"
             },
             "line": 26,
@@ -218,6 +230,7 @@
           },
           {
             "result": {
+              "duration": 18000,
               "status": "skipped"
             },
             "line": 27,
@@ -230,7 +243,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-08-09T11:25:35.143Z",
+        "start_timestamp": "2022-08-09T16:58:42.060Z",
         "line": 30,
         "name": "Klik cancel button saat menambahkan foto faskes tujuan",
         "description": "",
@@ -240,8 +253,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto(UploadDocumentStepDef.java:44)\r\n\tat ✽.User tambah foto(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:31)\r\n",
-              "duration": 1000000,
+              "error_message": "io.cucumber.java.PendingException: TODO: implement me\n\tat com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto(UploadDocumentStepDef.java:44)\n\tat ✽.User tambah foto(file:///home/ancient/Documents/MagangSQA/sqasiloamteamb/src/test/resources/features/UploadDocument.feature:31)\n",
+              "duration": 1257000,
               "status": "pending"
             },
             "line": 31,
@@ -253,6 +266,7 @@
           },
           {
             "result": {
+              "duration": 78000,
               "status": "skipped"
             },
             "line": 32,
@@ -264,6 +278,7 @@
           },
           {
             "result": {
+              "duration": 23000,
               "status": "skipped"
             },
             "line": 33,
@@ -276,7 +291,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-08-09T11:25:35.148Z",
+        "start_timestamp": "2022-08-09T16:58:42.083Z",
         "line": 35,
         "name": "Upload foto faskes tujuan file size diatas 5mb",
         "description": "",
@@ -286,7 +301,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_faskes_tujuan(UploadDocumentStepDef.java:92)\r\n\tat ✽.User tambah foto faskes tujuan(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:36)\r\n",
+              "error_message": "io.cucumber.java.PendingException: TODO: implement me\n\tat com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_faskes_tujuan(UploadDocumentStepDef.java:92)\n\tat ✽.User tambah foto faskes tujuan(file:///home/ancient/Documents/MagangSQA/sqasiloamteamb/src/test/resources/features/UploadDocument.feature:36)\n",
+              "duration": 694000,
               "status": "pending"
             },
             "line": 36,
@@ -298,6 +314,7 @@
           },
           {
             "result": {
+              "duration": 46000,
               "status": "skipped"
             },
             "line": 37,
@@ -309,6 +326,7 @@
           },
           {
             "result": {
+              "duration": 35000,
               "status": "skipped"
             },
             "line": 38,
@@ -321,7 +339,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-08-09T11:25:35.152Z",
+        "start_timestamp": "2022-08-09T16:58:42.116Z",
         "line": 40,
         "name": "Upload foto faskes tujuan dengan file selain format image",
         "description": "",
@@ -331,8 +349,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_faskes_tujuan(UploadDocumentStepDef.java:92)\r\n\tat ✽.User tambah foto faskes tujuan(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:41)\r\n",
-              "duration": 1000000,
+              "error_message": "io.cucumber.java.PendingException: TODO: implement me\n\tat com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_faskes_tujuan(UploadDocumentStepDef.java:92)\n\tat ✽.User tambah foto faskes tujuan(file:///home/ancient/Documents/MagangSQA/sqasiloamteamb/src/test/resources/features/UploadDocument.feature:41)\n",
+              "duration": 827000,
               "status": "pending"
             },
             "line": 41,
@@ -344,6 +362,7 @@
           },
           {
             "result": {
+              "duration": 52000,
               "status": "skipped"
             },
             "line": 42,
@@ -355,6 +374,7 @@
           },
           {
             "result": {
+              "duration": 19000,
               "status": "skipped"
             },
             "line": 43,
@@ -367,7 +387,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-08-09T11:25:35.156Z",
+        "start_timestamp": "2022-08-09T16:58:42.138Z",
         "line": 45,
         "name": "Upload foto faskes tujuan dengan benar",
         "description": "",
@@ -377,7 +397,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_faskes_tujuan(UploadDocumentStepDef.java:92)\r\n\tat ✽.User tambah foto faskes tujuan(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:46)\r\n",
+              "error_message": "io.cucumber.java.PendingException: TODO: implement me\n\tat com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_faskes_tujuan(UploadDocumentStepDef.java:92)\n\tat ✽.User tambah foto faskes tujuan(file:///home/ancient/Documents/MagangSQA/sqasiloamteamb/src/test/resources/features/UploadDocument.feature:46)\n",
+              "duration": 1572000,
               "status": "pending"
             },
             "line": 46,
@@ -389,6 +410,7 @@
           },
           {
             "result": {
+              "duration": 44000,
               "status": "skipped"
             },
             "line": 47,
@@ -400,6 +422,7 @@
           },
           {
             "result": {
+              "duration": 38000,
               "status": "skipped"
             },
             "line": 48,
@@ -412,7 +435,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-08-09T11:25:35.162Z",
+        "start_timestamp": "2022-08-09T16:58:42.171Z",
         "line": 51,
         "name": "Klik cancel button saat menambahkan foto ttd",
         "description": "",
@@ -422,7 +445,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto(UploadDocumentStepDef.java:44)\r\n\tat ✽.User tambah foto(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:52)\r\n",
+              "error_message": "io.cucumber.java.PendingException: TODO: implement me\n\tat com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto(UploadDocumentStepDef.java:44)\n\tat ✽.User tambah foto(file:///home/ancient/Documents/MagangSQA/sqasiloamteamb/src/test/resources/features/UploadDocument.feature:52)\n",
+              "duration": 696000,
               "status": "pending"
             },
             "line": 52,
@@ -434,6 +458,7 @@
           },
           {
             "result": {
+              "duration": 36000,
               "status": "skipped"
             },
             "line": 53,
@@ -445,6 +470,7 @@
           },
           {
             "result": {
+              "duration": 39000,
               "status": "skipped"
             },
             "line": 54,
@@ -457,7 +483,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-08-09T11:25:35.167Z",
+        "start_timestamp": "2022-08-09T16:58:42.184Z",
         "line": 56,
         "name": "Upload foto ttd file size diatas 5mb",
         "description": "",
@@ -467,8 +493,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_ttd(UploadDocumentStepDef.java:98)\r\n\tat ✽.User tambah foto ttd(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:57)\r\n",
-              "duration": 1000000,
+              "error_message": "io.cucumber.java.PendingException: TODO: implement me\n\tat com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_ttd(UploadDocumentStepDef.java:98)\n\tat ✽.User tambah foto ttd(file:///home/ancient/Documents/MagangSQA/sqasiloamteamb/src/test/resources/features/UploadDocument.feature:57)\n",
+              "duration": 1180000,
               "status": "pending"
             },
             "line": 57,
@@ -480,6 +506,7 @@
           },
           {
             "result": {
+              "duration": 57000,
               "status": "skipped"
             },
             "line": 58,
@@ -491,6 +518,7 @@
           },
           {
             "result": {
+              "duration": 10000,
               "status": "skipped"
             },
             "line": 59,
@@ -503,7 +531,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-08-09T11:25:35.171Z",
+        "start_timestamp": "2022-08-09T16:58:42.201Z",
         "line": 61,
         "name": "Upload foto ttd dengan file selain format image",
         "description": "",
@@ -513,8 +541,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_ttd(UploadDocumentStepDef.java:98)\r\n\tat ✽.User tambah foto ttd(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:62)\r\n",
-              "duration": 1000000,
+              "error_message": "io.cucumber.java.PendingException: TODO: implement me\n\tat com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_ttd(UploadDocumentStepDef.java:98)\n\tat ✽.User tambah foto ttd(file:///home/ancient/Documents/MagangSQA/sqasiloamteamb/src/test/resources/features/UploadDocument.feature:62)\n",
+              "duration": 598000,
               "status": "pending"
             },
             "line": 62,
@@ -526,6 +554,7 @@
           },
           {
             "result": {
+              "duration": 71000,
               "status": "skipped"
             },
             "line": 63,
@@ -537,6 +566,7 @@
           },
           {
             "result": {
+              "duration": 10000,
               "status": "skipped"
             },
             "line": 64,
@@ -549,7 +579,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-08-09T11:25:35.178Z",
+        "start_timestamp": "2022-08-09T16:58:42.219Z",
         "line": 66,
         "name": "Upload foto ttd dengan benar",
         "description": "",
@@ -559,7 +589,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_ttd(UploadDocumentStepDef.java:98)\r\n\tat ✽.User tambah foto ttd(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:67)\r\n",
+              "error_message": "io.cucumber.java.PendingException: TODO: implement me\n\tat com.siloam.uploaddoc.UploadDocumentStepDef.user_tambah_foto_ttd(UploadDocumentStepDef.java:98)\n\tat ✽.User tambah foto ttd(file:///home/ancient/Documents/MagangSQA/sqasiloamteamb/src/test/resources/features/UploadDocument.feature:67)\n",
+              "duration": 806000,
               "status": "pending"
             },
             "line": 67,
@@ -571,6 +602,7 @@
           },
           {
             "result": {
+              "duration": 38000,
               "status": "skipped"
             },
             "line": 68,
@@ -582,6 +614,7 @@
           },
           {
             "result": {
+              "duration": 10000,
               "status": "skipped"
             },
             "line": 69,
@@ -594,7 +627,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-08-09T11:25:35.185Z",
+        "start_timestamp": "2022-08-09T16:58:42.242Z",
         "line": 72,
         "name": "Menambahkan lengkap foto yang diminta sistem",
         "description": "",
@@ -604,7 +637,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat com.siloam.uploaddoc.UploadDocumentStepDef.user_upload_tiga_foto_yang_diminta_sistem(UploadDocumentStepDef.java:104)\r\n\tat ✽.User upload tiga foto yang diminta sistem(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:73)\r\n",
+              "error_message": "io.cucumber.java.PendingException: TODO: implement me\n\tat com.siloam.uploaddoc.UploadDocumentStepDef.user_upload_tiga_foto_yang_diminta_sistem(UploadDocumentStepDef.java:104)\n\tat ✽.User upload tiga foto yang diminta sistem(file:///home/ancient/Documents/MagangSQA/sqasiloamteamb/src/test/resources/features/UploadDocument.feature:73)\n",
+              "duration": 1091000,
               "status": "pending"
             },
             "line": 73,
@@ -616,6 +650,7 @@
           },
           {
             "result": {
+              "duration": 86000,
               "status": "skipped"
             },
             "line": 74,
@@ -627,6 +662,7 @@
           },
           {
             "result": {
+              "duration": 51000,
               "status": "skipped"
             },
             "line": 75,
@@ -639,7 +675,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-08-09T11:25:35.190Z",
+        "start_timestamp": "2022-08-09T16:58:42.265Z",
         "line": 77,
         "name": "Klik button selanjutnya menu upload dokumen",
         "description": "",
@@ -649,7 +685,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat com.siloam.uploaddoc.UploadDocumentStepDef.user_klik_button_selanjutnya(UploadDocumentStepDef.java:122)\r\n\tat ✽.User klik button selanjutnya(file:///C:/Users/Ben/eclipse-workspace/SiloamTest/src/test/resources/features/UploadDocument.feature:78)\r\n",
+              "error_message": "io.cucumber.java.PendingException: TODO: implement me\n\tat com.siloam.uploaddoc.UploadDocumentStepDef.user_klik_button_selanjutnya(UploadDocumentStepDef.java:122)\n\tat ✽.User klik button selanjutnya(file:///home/ancient/Documents/MagangSQA/sqasiloamteamb/src/test/resources/features/UploadDocument.feature:78)\n",
+              "duration": 399000,
               "status": "pending"
             },
             "line": 78,
@@ -661,6 +698,7 @@
           },
           {
             "result": {
+              "duration": 21000,
               "status": "skipped"
             },
             "line": 79,
@@ -672,6 +710,7 @@
           },
           {
             "result": {
+              "duration": 7000,
               "status": "skipped"
             },
             "line": 80,
