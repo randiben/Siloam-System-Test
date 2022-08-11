@@ -1,8 +1,8 @@
 Feature: Upload Dokumen Testing
 
-	Scenario: Klik button Collapse / Expand
-		When User klik button collapse / Expand
-		Then Layout menu dihilangkan / diperlebar
+	Scenario: Klik button Collapse Expand
+		When User klik button collapse expand
+		Then Layout menu dihilangkan diperlebar "none"
 		
 	Scenario: Edit data
 		When User klik tombol edit data

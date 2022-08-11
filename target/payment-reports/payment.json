@@ -3,45 +3,444 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-08-03T08:00:59.770Z",
-        "line": 2,
-        "name": "Testing Menampilkan Halaman Login",
+        "start_timestamp": "2022-08-11T13:38:36.765Z",
+        "line": 3,
+        "name": "Klik button Collapse / Expand",
         "description": "",
-        "id": "user-sales-login-ke-siloam-project;testing-menampilkan-halaman-login",
+        "id": "upload-dokumen-testing;klik-button-collapse-/-expand",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 7426000000,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 3,
-            "name": "User mengakses url",
-            "match": {
-              "location": "com.siloam.StepDefinitions.user_mengakses_url()"
-            },
-            "keyword": "Given "
+            "line": 4,
+            "name": "User klik button collapse / Expand",
+            "match": {},
+            "keyword": "When "
           },
           {
             "result": {
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 4,
-            "name": "User menampillkan halaman login",
-            "match": {
-              "location": "com.siloam.StepDefinitions.user_menampillkan_halaman_login()"
+            "line": 5,
+            "name": "Layout menu dihilangkan / diperlebar",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-11T13:38:36.797Z",
+        "line": 7,
+        "name": "Edit data",
+        "description": "",
+        "id": "upload-dokumen-testing;edit-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
             },
+            "line": 8,
+            "name": "User klik tombol edit data",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "Form menu input menjadi aktif",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-11T13:38:36.807Z",
+        "line": 11,
+        "name": "Form input nama",
+        "description": "",
+        "id": "upload-dokumen-testing;form-input-nama",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "User ubah nama",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "Nama berubah sesuai inputan",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-11T13:38:36.819Z",
+        "line": 15,
+        "name": "Form input nomor bpjs",
+        "description": "",
+        "id": "upload-dokumen-testing;form-input-nomor-bpjs",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "User ubah nomor bpjs",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "Nomor bpjs berubah sesuai inputan",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-11T13:38:36.827Z",
+        "line": 19,
+        "name": "Form input nomor ktp",
+        "description": "",
+        "id": "upload-dokumen-testing;form-input-nomor-ktp",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "User ubah nomor ktp",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "Nomor ktp berubah sesuai inputan",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-11T13:38:36.837Z",
+        "line": 23,
+        "name": "Form input alamat",
+        "description": "",
+        "id": "upload-dokumen-testing;form-input-alamat",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "User ubah alamat",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "Alamat berubah sesuai inputan",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-11T13:38:36.851Z",
+        "line": 27,
+        "name": "Form input kota ktp",
+        "description": "",
+        "id": "upload-dokumen-testing;form-input-kota-ktp",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 28,
+            "name": "User ubah kota ktp",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 29,
+            "name": "kota ktp berubah sesuai pilihan",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-11T13:38:36.859Z",
+        "line": 31,
+        "name": "Form input faskes awal",
+        "description": "",
+        "id": "upload-dokumen-testing;form-input-faskes-awal",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 32,
+            "name": "User ubah faskes awal",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 33,
+            "name": "faskes awal berubah sesuai pilihan",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-11T13:38:36.866Z",
+        "line": 35,
+        "name": "Form input faskes tujuan",
+        "description": "",
+        "id": "upload-dokumen-testing;form-input-faskes-tujuan",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 36,
+            "name": "User ubah faskes tujuan",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 37,
+            "name": "faskes tujuan berubah sesuai pilihan",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-11T13:38:36.874Z",
+        "line": 39,
+        "name": "Form input alasan",
+        "description": "",
+        "id": "upload-dokumen-testing;form-input-alasan",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 40,
+            "name": "User ubah alasan",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 41,
+            "name": "alasan berubah sesuai pilihan",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-11T13:38:36.883Z",
+        "line": 43,
+        "name": "Button cancel edit",
+        "description": "",
+        "id": "upload-dokumen-testing;button-cancel-edit",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 44,
+            "name": "User klik cancel button saat edit",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 45,
+            "name": "Menu input data nonaktif",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 46,
+            "name": "Data tidak berubah",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-11T13:38:36.892Z",
+        "line": 48,
+        "name": "Delete file dokumen",
+        "description": "",
+        "id": "upload-dokumen-testing;delete-file-dokumen",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 49,
+            "name": "User hapus file",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 50,
+            "name": "tampil alert konfirmasi lalu file terhapus",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 51,
+            "name": "Button submit nonaktif",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-11T13:38:36.909Z",
+        "line": 53,
+        "name": "Preview dokumen perjanjian",
+        "description": "",
+        "id": "upload-dokumen-testing;preview-dokumen-perjanjian",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 54,
+            "name": "User check preview perjanjian",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 55,
+            "name": "Data sama dengan inputan",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-08-11T13:38:36.918Z",
+        "line": 57,
+        "name": "Button submit",
+        "description": "",
+        "id": "upload-dokumen-testing;button-submit",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 58,
+            "name": "User klik button submit",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 59,
+            "name": "klik ok alert verifikasi",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 60,
+            "name": "Menampilkan halaman input data dan notifikasi ttd digital berhasil",
+            "match": {},
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "User Sales Login ke Siloam Project",
+    "name": "Upload Dokumen Testing",
     "description": "",
-    "id": "user-sales-login-ke-siloam-project",
+    "id": "upload-dokumen-testing",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/AksesSite.feature",
+    "uri": "file:src/test/resources/features/TTD.feature",
     "tags": []
   }
 ]
