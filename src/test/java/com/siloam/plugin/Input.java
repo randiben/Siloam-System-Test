@@ -25,7 +25,7 @@ public class Input {
 			DriverSet.getDriver().findElement(By.xpath("//a[@href='https://dev.ptdika.com/siloam/sales/input']")).click();
 			DriverSet.getDriver().findElement(By.xpath("//input[@id='name']")).sendKeys("eben kesbor");
 			//no bpjs 13 digit
-			DriverSet.getDriver().findElement(By.xpath("//input[@id='no_bpjs']")).sendKeys("1232343454565");
+			DriverSet.getDriver().findElement(By.xpath("//input[@id='no_bpjs']")).sendKeys("9485733335746");
 			//no ktp 16 digit
 			DriverSet.getDriver().findElement(By.xpath("//input[@id='no_ktp']")).sendKeys("1234567890123456");
 			DriverSet.getDriver().findElement(By.xpath("//textarea[@id='address']")).sendKeys("Bojong Soang");
@@ -41,14 +41,19 @@ public class Input {
 			WebElement faskesTujuan = DriverSet.getDriver().findElement(By.xpath("//input[@class='select2-search__field']"));
 			faskesTujuan.sendKeys("clinic sunter");
 			faskesTujuan.sendKeys(Keys.ENTER);
-//			WebDriverWait wait = new WebDriverWait(DriverSet.getDriver(), 5);
-//			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//textarea[@id='reason']']"))).sendKeys("bosan");
-			WebElement reason = new WebDriverWait(DriverSet.getDriver(), Duration.ofSeconds(10))
-				.until(ExpectedConditions.elementToBeClickable(By.xpath("//textarea[@id='reason']"));
-//			DriverSet.getDriver().findElement(By.xpath("//button[@type='submit']"));
-			} 
-		catch (WebDriverException e) {}
+//			DriverSet.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//			DriverSet.getDriver().findElement(By.xpath("//textarea[@id='reason']")).sendKeys("bosan");
+//			
+//			//			WebElement reason = new WebDriverWait(DriverSet.getDriver(), Duration.ofSeconds(10))
+//				.until(ExpectedConditions.elementToBeClickable(By.xpath("//textarea[@id='reason']"));
+//			DriverSet.getDriver().findElement(By.xpath("//button[@type='submit']")).click();
+			} catch (WebDriverException e) {}
 		
+		try {
+			DriverSet.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			DriverSet.getDriver().findElement(By.xpath("//textarea[@id='reason']")).sendKeys("bosan");
+			DriverSet.getDriver().findElement(By.xpath("//button[@type='submit']")).click();
+		} catch (WebDriverException e) {}
 	}
 
 }

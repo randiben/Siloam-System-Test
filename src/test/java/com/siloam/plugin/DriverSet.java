@@ -11,9 +11,6 @@ public class DriverSet {
 	
 	public static String url = "https://dev.ptdika.com/siloam/";
 	private static WebDriver driver;
-	
-	
-	
 
 	public static String getPath() {
 		String path = null;
@@ -30,7 +27,6 @@ public class DriverSet {
 	public static void setDriver() {
 		System.setProperty("webdriver.chrome.driver", DriverSet.getPath());
 		driver = new ChromeDriver();
-		driver.manage().window().maximize();
 //		return driver;
 	}
 	

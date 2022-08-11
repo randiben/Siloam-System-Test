@@ -24,6 +24,7 @@ public class LoginStep {
 	public static void loginSales() {
 		DriverSet.setDriver();
 		DriverSet.getDriver().navigate().to(DriverSet.url);
+		DriverSet.getDriver().manage().window().maximize();
 		DriverSet.getDriver().findElement(By.xpath("//input[@name=\"username\"]")).sendKeys("D6200927");
 		DriverSet.getDriver().findElement(By.xpath("//input[@name=\"password\"]")).sendKeys("19971023");
 		DriverSet.getDriver().findElement(By.xpath("//button[@type=\"submit\"]")).click();
@@ -33,6 +34,7 @@ public class LoginStep {
 	public static void loginAdmin() {
 		DriverSet.setDriver();
 		DriverSet.getDriver().navigate().to(DriverSet.url);
+		DriverSet.getDriver().manage().window().maximize();
 		DriverSet.getDriver().findElement(By.xpath("//input[@name=\"username\"]")).sendKeys("admindika");
 		DriverSet.getDriver().findElement(By.xpath("//input[@name=\"password\"]")).sendKeys("d1k4@passw0rd");
 		DriverSet.getDriver().findElement(By.xpath("//button[@type=\"submit\"]")).click();
